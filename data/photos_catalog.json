@@ -1,7 +1,8 @@
 {
   "objectif": 12,
   "genere_le": "2026-07-07",
-  "note": "sha256 : à calculer au téléchargement par harvest_photos() de scraper_adjaho.py (exécution locale). 3 images confirmées par inspection des balises og:image / img des pages sources.",
+  "note": "Récolte du 2026-07-07 (scraper/harvest_from_catalog.py). 4 images téléchargées avec SHA-256 complet dans site/photos/ : 2 portraits authentiques (rangs 1-2, vérifiés visuellement) + 2 couvertures d'ouvrages basse résolution (rangs 3, 8). Rang 9 écarté (faux positif : bannière EconBiz). Rangs 4-7, 10-12 restent à récupérer manuellement (sites injoignables, Wayback/Getty, archives familiales).",
+  "bilan_recolte": {"telechargees": 4, "verifiees_visuellement": 4, "faux_positif_ecarte": 1, "a_recuperer": 8, "objectif": 12},
   "photos": [
     {
       "rang": 1,
@@ -10,7 +11,9 @@
       "url_image": "https://lanouvelletribune.info/wp-content/uploads/adjaho-1.jpg",
       "credit": "La Nouvelle Tribune",
       "statut": "confirmee",
-      "sha256": null
+      "sha256": "1b0bd05c84434136be574ea06db5935f29c97d609cdfeae65e2285b4197f314b",
+      "fichier_local": "site/photos/01_1b0bd05c8443.jpg",
+      "octets": 73653
     },
     {
       "rang": 2,
@@ -19,7 +22,9 @@
       "url_image": "http://news.acotonou.com/img_photos/L/Richard-Adjaho.gif",
       "credit": "aCotonou.com / DR — L'Événement Précis",
       "statut": "confirmee",
-      "sha256": null
+      "sha256": "aae13d19f025c3f9dd3ff2f1fe8eab3d8fb1d79d00ed4cf304f6f2acbd700158",
+      "fichier_local": "site/photos/02_aae13d19f025.gif",
+      "octets": 335201
     },
     {
       "rang": 3,
@@ -28,7 +33,10 @@
       "url_image": "https://books.google.com/books/content?id=RFQWAQAAIAAJ&printsec=frontcover&img=1&zoom=1",
       "credit": "Google Books / Éditions du Flamboyant",
       "statut": "confirmee",
-      "sha256": null
+      "sha256": "0f36a153bb9c6455ee6958ca017bc91ada4e892abcf3a12bcdaddaa7e7a7a778",
+      "fichier_local": "site/photos/03_0f36a153bb9c.jpg",
+      "octets": 2757,
+      "note_harvest": "Vraie couverture, mais basse résolution (128x214 px, maximum exposé par Google Books en vue « snippet »). Pour une meilleure qualité : numériser un exemplaire de l'ouvrage."
     },
     {
       "rang": 4,
@@ -72,8 +80,11 @@
       "page_source": "https://books.google.com/books/about/D%C3%A9centralisation_au_B%C3%A9nin_en_Afrique_e.html?id=RruOAAAAMAAJ",
       "url_image": "https://books.google.com/books/content?id=RruOAAAAMAAJ&printsec=frontcover&img=1&zoom=1",
       "credit": "Google Books / Éditions du Flamboyant",
-      "statut": "a_recuperer",
-      "sha256": null
+      "statut": "confirmee",
+      "sha256": "8132479e71152e2d3f4f13fc397797e2d4b7dad1f727a2e93a231f0719b6df2e",
+      "fichier_local": "site/photos/08_8132479e7115.jpg",
+      "octets": 4286,
+      "note_harvest": "Vraie couverture (mention « Richard Adjaho, Inspecteur général des finances… Août 2002 - Première édition »), mais basse résolution (128x212 px, maximum Google Books). Numériser un exemplaire pour mieux."
     },
     {
       "rang": 9,
@@ -82,7 +93,8 @@
       "url_image": null,
       "credit": "Éditions du Flamboyant — à sourcer via BnF/WorldCat ou numérisation d'un exemplaire familial",
       "statut": "a_recuperer",
-      "sha256": null
+      "sha256": null,
+      "note_harvest": "L'og:image d'EconBiz est une bannière générique du site (« ECONBIZ — Find Economic Literature »), PAS la couverture du livre : écartée le 2026-07-07. EconBiz n'expose pas d'image de couverture pour cette notice."
     },
     {
       "rang": 10,

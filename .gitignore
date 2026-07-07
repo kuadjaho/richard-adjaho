@@ -4,10 +4,10 @@ __pycache__/
 .venv/
 venv/
 
-# Scraper outputs (regenerated locally)
-corpus/
+# Scraper scratch outputs (regenerated locally) — but NOT site/photos/ (curated assets)
+/corpus/
+/photos/
 scraper/corpus/
-photos/
 scraper/photos/
 
 # OS
