@@ -1,0 +1,236 @@
+/* memorial.css — styles sur-mesure du mémorial Richard Adjaho.
+   Tailwind (CDN) porte l'utilitaire ; ce fichier porte l'identité :
+   typographie d'apparat, timeline, textures, lightbox, impression.
+   Base lisible même si le CDN Tailwind est indisponible (hors-ligne). */
+
+:root {
+  --ivoire: #faf8f4;
+  --sable: #efe9df;
+  --encre: #1a1d23;
+  --encre-2: #4b5563;
+  --foret: #14532d;
+  --or: #b8860b;
+  --filet: #ddd5c7;
+}
+
+/* ---------- Base hors-CDN (le site reste lisible sans Tailwind) ---------- */
+html { scroll-behavior: smooth; }
+body {
+  background: var(--ivoire);
+  color: var(--encre);
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  line-height: 1.65;
+  margin: 0;
+}
+.font-serif, h1, h2, h3 { font-family: "Playfair Display", Georgia, "Times New Roman", serif; }
+img { max-width: 100%; }
+
+/* ---------- Ornements éditoriaux ---------- */
+.filet-double {
+  border-top: 3px double var(--filet);
+}
+.chapitre::before {
+  content: attr(data-numero);
+  display: block;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--or);
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+.lettrine::first-letter {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 3.4em;
+  line-height: 0.82;
+  float: left;
+  padding: 0.04em 0.12em 0 0;
+  color: var(--foret);
+  font-weight: 700;
+}
+
+/* ---------- Révélation au défilement ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.reveal.est-visible { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .barre-lecture { transition: none; }
+}
+
+/* ---------- Barre de progression de lecture ---------- */
+.barre-lecture {
+  position: fixed;
+  top: 0; left: 0;
+  height: 3px;
+  width: 0;
+  background: linear-gradient(90deg, var(--foret), var(--or));
+  z-index: 60;
+  transition: width 0.1s linear;
+}
+
+/* ---------- Timeline ---------- */
+.timeline { position: relative; }
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.55rem;
+  top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(var(--filet) 60%, transparent);
+}
+@media (min-width: 768px) {
+  .timeline::before { left: 50%; transform: translateX(-1px); }
+}
+.timeline-puce {
+  position: absolute;
+  left: 0; top: 0.45rem;
+  width: 1.15rem; height: 1.15rem;
+  border-radius: 9999px;
+  background: var(--ivoire);
+  border: 3px solid var(--foret);
+  z-index: 1;
+}
+.timeline-etape.est-visible .timeline-puce { animation: puce-pop 0.5s cubic-bezier(0.22,1,0.36,1); }
+@keyframes puce-pop { 0% { transform: scale(0.4); } 70% { transform: scale(1.25); } 100% { transform: scale(1); } }
+@media (prefers-reduced-motion: reduce) { .timeline-etape .timeline-puce { animation: none !important; } }
+@media (min-width: 768px) {
+  .timeline-puce { left: 50%; transform: translateX(-50%); }
+}
+.timeline-annee {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  color: var(--foret);
+  font-variant-numeric: proportional-nums;
+}
+
+/* ---------- Badges décrets ---------- */
+.badge-verifie, .badge-averifier {
+  display: inline-flex; align-items: center; gap: 0.3rem;
+  font-size: 0.68rem; font-weight: 600;
+  padding: 0.1rem 0.55rem; border-radius: 9999px;
+  letter-spacing: 0.02em;
+}
+.badge-verifie { background: #e3efe6; color: var(--foret); }
+.badge-averifier { background: #f6ecd9; color: #7c5806; }
+
+/* ---------- Citations ---------- */
+.citation-grande {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.5rem, 3.2vw, 2.4rem);
+  line-height: 1.35;
+  font-weight: 500;
+  color: var(--foret);
+  text-wrap: balance;
+}
+.citation-grande::before { content: "« "; color: var(--or); }
+.citation-grande::after { content: " »"; color: var(--or); }
+
+/* ---------- Bibliothèque : couvertures typographiques ---------- */
+.couv-typo {
+  aspect-ratio: 128 / 200;
+  background:
+    linear-gradient(160deg, rgba(20, 83, 45, 0.06), transparent 55%),
+    repeating-linear-gradient(0deg, transparent 0 26px, rgba(26, 29, 35, 0.045) 26px 27px),
+    #f4efe5;
+  border: 1px solid var(--filet);
+  border-left: 6px solid var(--foret);
+  box-shadow: 2px 3px 0 rgba(26, 29, 35, 0.08);
+  display: flex; flex-direction: column; justify-content: space-between;
+  padding: 0.9rem 0.8rem;
+  overflow: hidden;
+}
+.couv-typo .couv-titre {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  font-size: 0.72rem;
+  line-height: 1.25;
+  color: var(--encre);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.couv-reelle {
+  aspect-ratio: 128 / 200;
+  object-fit: cover;
+  border: 1px solid var(--filet);
+  box-shadow: 2px 3px 0 rgba(26, 29, 35, 0.08);
+}
+
+/* ---------- Galerie ---------- */
+.photo-carte { cursor: zoom-in; }
+.photo-carte img {
+  filter: sepia(0.12) contrast(1.02);
+  transition: filter 0.4s, transform 0.4s;
+}
+.photo-carte:hover img, .photo-carte:focus-visible img { filter: none; transform: scale(1.015); }
+@media (prefers-reduced-motion: reduce) { .photo-carte img { transition: none; } }
+
+.trace-carte {
+  background:
+    repeating-linear-gradient(45deg, transparent 0 14px, rgba(184, 134, 11, 0.05) 14px 15px),
+    var(--sable);
+  border: 1px dashed #c9bfa8;
+}
+.tampon {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #a16207;
+  border: 1.5px solid #d4b46a;
+  border-radius: 3px;
+  padding: 0.15rem 0.5rem;
+  transform: rotate(-2deg);
+}
+.cadre-famille {
+  border: 2px dashed var(--or);
+  background:
+    radial-gradient(ellipse at center, rgba(184, 134, 11, 0.05), transparent 70%),
+    var(--ivoire);
+}
+
+/* ---------- Lightbox ---------- */
+dialog.lightbox {
+  border: none;
+  background: rgba(15, 17, 21, 0.96);
+  padding: 0;
+  max-width: min(92vw, 1100px);
+  max-height: 92vh;
+}
+dialog.lightbox::backdrop { background: rgba(15, 17, 21, 0.85); backdrop-filter: blur(3px); }
+dialog.lightbox img { max-height: 72vh; width: auto; max-width: 100%; margin: 0 auto; display: block; }
+
+/* ---------- JSON viewer ---------- */
+.json-pre {
+  background: #101418;
+  color: #d7e0ea;
+  font-size: 0.74rem;
+  line-height: 1.5;
+  max-height: 60vh;
+  overflow: auto;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+}
+
+/* ---------- Impression ---------- */
+@media print {
+  .barre-lecture, nav, .no-print { display: none !important; }
+  body { background: #fff; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+  .photo-carte img { filter: none; }
+}

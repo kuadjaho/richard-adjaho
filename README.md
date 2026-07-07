@@ -9,13 +9,16 @@ base du site web hommage.
 
 ## Structure du dépôt
 
-| Dossier | Contenu |
+| Élément | Contenu |
 |---------|---------|
-| `data/` | Données structurées — `richard_adjaho_heritage.json` (corpus principal, schéma v2.0) et `photos_catalog.json` (12 photos planifiées) |
-| `schema/` | `schema_heritage.py` — modèle Pydantic v2 validant le JIS du corpus |
-| `scraper/` | `scraper_adjaho.py` — script de collecte OSINT (Jina Reader + fallback BeautifulSoup, module photos) |
-| `docs/` | `dossier_sources_adjaho.md` — synthèse du balayage web, chronologie, bibliographie, sources |
-| `site/` | `index.html` — aperçu web (onglets Chronologie / Bibliographie / Hommages / Photos / JSON) |
+| `index.html` | **Le site mémorial** — single page « magazine » : ouverture, chiffres, chronologie interactive (11 étapes), témoignage long-format, hommages, bibliothèque, galerie avec traces d'archives, données ouvertes |
+| `assets/images/` | Photos vérifiées par empreinte SHA-256 |
+| `assets/css/` · `assets/js/` | Styles sur-mesure et modules natifs (timeline, galerie, témoignages, orchestration) — Tailwind via CDN, zéro framework |
+| `data/` | Données structurées — `richard_adjaho_heritage.json` (corpus principal, schéma v2.0) et `photos_catalog.json` (catalogue photos + bilan de récolte) |
+| `schema/` | `schema_heritage.py` — modèle Pydantic v2 validant le corpus |
+| `scripts/` | `build_data.py` — valide le corpus et régénère `assets/js/data.js` (source unique de vérité, site utilisable en `file://`) |
+| `scraper/` | `scraper_adjaho.py` + `harvest_from_catalog.py` — collecte OSINT et récolte des photos |
+| `docs/` | Synthèse des sources + `docs/archives/` : textes intégraux sauvés de la Wayback Machine |
 
 ## Données clés
 
@@ -24,13 +27,20 @@ base du site web hommage.
 - **Hommages** : 6 articles de presse (La Nouvelle Tribune, La Nation, L'Événement Précis, etc.).
 - **Photos** : 12 planifiées — 3 confirmées, 9 à récupérer (dont archives familiales).
 
-## Prévisualiser le site
+## Voir le site
 
-Ouvrir `site/index.html` dans un navigateur, ou servir localement :
+Ouvrir `index.html` directement dans un navigateur (fonctionne en `file://`),
+ou servir localement :
 
 ```bash
-python3 -m http.server -d site 8000
+python3 -m http.server 8000
 # puis http://localhost:8000
+```
+
+Après toute modification de `data/*.json`, régénérer les données embarquées :
+
+```bash
+python3 scripts/build_data.py   # valide (Pydantic) puis réécrit assets/js/data.js
 ```
 
 ## Relancer la collecte

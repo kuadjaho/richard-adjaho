@@ -1,0 +1,546 @@
+// GÉNÉRÉ PAR scripts/build_data.py — NE PAS ÉDITER À LA MAIN.
+// Source : data/richard_adjaho_heritage.json + data/photos_catalog.json (build du 2026-07-08)
+window.HERITAGE = {
+ "schema_version": "2.0",
+ "identite": {
+  "nom_complet": "Richard Kokou Adjaho",
+  "dates": {
+   "naissance": "1949-01-01",
+   "deces": "2009-12-18",
+   "lieu_naissance": "Djèrègbè (ex-colonie du Dahomey, act. commune de Sèmè-Kpodji, Bénin)",
+   "lieu_deces": "CNHU Hubert K. Maga, Cotonou (Bénin)",
+   "cause_deces": "Accident cardio-vasculaire suivi d'une intervention chirurgicale cérébrale qu'il n'a pas supportée (admis au CNHU le mardi précédent, évacuation sanitaire prévue)"
+  },
+  "titres": [
+   "Administrateur civil",
+   "Inspecteur général des Finances",
+   "Ministre",
+   "Ambassadeur",
+   "Écrivain",
+   "Enseignant (ENEAM/ENAM)"
+  ],
+  "corps": [
+   "Inspecteur d'État",
+   "Inspecteur des Finances",
+   "Inspecteur général des Finances"
+  ],
+  "formation": [
+   {
+    "diplome": "Diplôme de 3e cycle en sciences économiques",
+    "institution": "Université Paris-Sorbonne",
+    "remarque": null
+   },
+   {
+    "diplome": "Diplôme de second cycle",
+    "institution": "Institut international d'administration publique (IIAP), Paris",
+    "remarque": null
+   },
+   {
+    "diplome": "Auditorat",
+    "institution": "Cour des comptes, Paris",
+    "remarque": "Retour au Bénin en 1978 après ses études supérieures en France"
+   }
+  ],
+  "famille": {
+   "epouse": "Agnès Avognon Adjaho (ambassadrice du Bénin en Italie et près le Saint-Siège en 2019)",
+   "enfants": "Quatre enfants"
+  },
+  "partis": [
+   "Renaissance du Bénin (RB) — militant actif, puis en froid avec le parti avant 2006"
+  ]
+ },
+ "chronologie_carriere": [
+  {
+   "periode": "≈1968-1978",
+   "type_periode": "formation",
+   "poste": "Études supérieures en France",
+   "institution": "Paris-Sorbonne, IIAP, Cour des comptes (Paris)",
+   "contexte_historique": "Formation d'élite de l'administration financière française avant le retour au pays en 1978.",
+   "realisations_cles": [],
+   "textes_loi_associes": [],
+   "citations_presse": []
+  },
+  {
+   "periode": "1978-1984",
+   "type_periode": "haut_fonctionnaire",
+   "poste": "Directeur des études et de la planification au Ministère des Finances ; administrateur de la BOAD et de la Société des ciments d'Onigbolo ; Président du CA de la Banque béninoise de développement (BBD, 1982-1984)",
+   "institution": "Ministère des Finances (ministre Isidore Amoussou), BOAD, BBD",
+   "contexte_historique": "Régime PRPB (marxiste-léniniste) — il traverse toute la période sans être encarté au Parti et sans être épinglé par une commission d'enquête, 'un exploit' selon la presse.",
+   "realisations_cles": [
+    "Accès très tôt aux postes de responsabilité dans l'administration publique béninoise",
+    "Administration de deux institutions financières régionales et industrielles (BOAD, Ciments d'Onigbolo)"
+   ],
+   "textes_loi_associes": [],
+   "citations_presse": []
+  },
+  {
+   "periode": "1984-1990",
+   "type_periode": "haut_fonctionnaire",
+   "poste": "Directeur général au Ministère du Commerce, de l'Artisanat et du Tourisme ; Président du CA de la Sonacop",
+   "institution": "Ministère du Commerce (ministres successifs : Gado Guiriguissou, Soulé Dankoro, Amos Elegbé), Sonacop",
+   "contexte_historique": "Fin du régime PRPB, crise économique de 1989 (salaires, pensions et bourses impayés pendant sept mois).",
+   "realisations_cles": [
+    "Dès octobre 1989, réunit journalistes et communicateurs pour appeler les populations à la non-violence et aux manifestations pacifiques pendant la crise pré-Conférence nationale"
+   ],
+   "textes_loi_associes": [],
+   "citations_presse": [
+    {
+     "texte": "Nous devons tous travailler avec assiduité, rigueur, abnégation, discipline et volonté, pour sortir le Bénin de la misère, de la pauvreté et du sous-développement.",
+     "auteur": "Richard Adjaho (rapporté par Constant Agbidinoukoun)",
+     "source": "L'Événement Précis (via aCotonou)",
+     "date": "2019-12-18",
+     "url": "http://news.acotonou.com/h/123097.html"
+    }
+   ]
+  },
+  {
+   "periode": "1990-1991",
+   "type_periode": "ministre_transition",
+   "poste": "Ministre du Commerce, de l'Artisanat et du Tourisme (gouvernement de transition)",
+   "institution": "Gouvernement de transition du Premier ministre Nicéphore Soglo",
+   "contexte_historique": "Nommé à 40 ans au sortir de la Conférence nationale des Forces vives de février 1990 — le Renouveau démocratique.",
+   "realisations_cles": [
+    "Gestion du portefeuille commercial pendant la transition démocratique"
+   ],
+   "textes_loi_associes": [],
+   "citations_presse": []
+  },
+  {
+   "periode": "1991-1993",
+   "type_periode": "ministre_interieur",
+   "poste": "Ministre de l'Intérieur, de la Sécurité et de l'Administration territoriale",
+   "institution": "Gouvernement du président Nicéphore Soglo",
+   "contexte_historique": "Premier gouvernement élu du Renouveau démocratique. NB : l'intitulé exact du portefeuille est 'Administration territoriale' (les sources tardives disent parfois 'Décentralisation'). Départ du gouvernement en 1993 (prise de parts dans une institution publique sur mauvais conseil, incompatible avec la Constitution).",
+   "realisations_cles": [
+    "Tournées nationales pour remettre policiers et forces de sécurité publique au travail",
+    "Responsabilisation des élus locaux sur la gestion saine des affaires locales",
+    "Travail préparatoire du découpage territorial et du choix des chefs-lieux des nouveaux départements (médiation des conflits Dassa/Savè/Savalou, Kétou/Pobè, Adjohoun/Bonou/Dangbo)",
+    "Initiation des premiers textes de la décentralisation béninoise",
+    "Visite officielle en France en qualité de Ministre de l'Intérieur (documentée par FranceArchives)"
+   ],
+   "textes_loi_associes": [
+    {
+     "reference": "Décrets 1991-1993 (à inventorier)",
+     "titre": "Corpus des décrets signés/contresignés — crawl sgg.gouv.bj pattern /doc/decret-{annee}-{num}/download",
+     "url_source": "https://sgg.gouv.bj/documentheque/decrets/",
+     "statut_verification": "a_verifier"
+    },
+    {
+     "reference": "FranceArchives 174d0f18e2e25bf573eba77f531647291af08cd4",
+     "titre": "Visite de M. Richard Adjaho, Ministre de l'Intérieur du Bénin",
+     "url_source": "https://francearchives.gouv.fr/facomponent/174d0f18e2e25bf573eba77f531647291af08cd4",
+     "statut_verification": "verifie"
+    }
+   ],
+   "citations_presse": [
+    {
+     "texte": "Il parlait de convivialité, de fraternité entre citoyens d'une même région et d'un même pays, d'harmonie entre familles déchirées, à cause du découpage territorial et des exigences liées à la décentralisation.",
+     "auteur": "Constant Agbidinoukoun (attaché de presse du ministère)",
+     "source": "L'Événement Précis (via aCotonou)",
+     "date": "2019-12-18",
+     "url": "http://news.acotonou.com/h/123097.html"
+    }
+   ]
+  },
+  {
+   "periode": "1994-1996",
+   "type_periode": "ambassadeur",
+   "poste": "Ambassadeur extraordinaire et plénipotentiaire du Bénin près la France",
+   "institution": "Ambassade du Bénin à Paris",
+   "contexte_historique": "Remise des lettres de créance publiée au Journal officiel de la République française (Légifrance).",
+   "realisations_cles": [
+    "Renforcement de la coopération Paris–Porto-Novo dans la décentralisation, l'enseignement supérieur, la formation technique et professionnelle et la culture",
+    "A laissé 'des souvenirs inoubliables aux Béninois de la diaspora de l'époque' (V. Foly)"
+   ],
+   "textes_loi_associes": [
+    {
+     "reference": "JORFTEXT000000732435",
+     "titre": "Remise de lettres de créance",
+     "url_source": "https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000732435&categorieLien=id",
+     "statut_verification": "verifie"
+    }
+   ],
+   "citations_presse": []
+  },
+  {
+   "periode": "1996-2005",
+   "type_periode": "decentralisation_idec",
+   "poste": "Président du Conseil d'administration de l'Institut africain de décentralisation (IDEC) ; chargé de cours à l'ENEAM et à l'ENAM",
+   "institution": "IDEC, ENEAM, ENAM",
+   "contexte_historique": "Reconnu comme l'un des pères de la Décentralisation au Bénin ; poursuite des recherches et publications.",
+   "realisations_cles": [
+    "Théorisation et vulgarisation de la réforme de l'administration territoriale (ouvrages 1997, 2002, 2004)",
+    "Interview de référence sur la décentralisation béninoise (Hub Rural)"
+   ],
+   "textes_loi_associes": [],
+   "citations_presse": []
+  },
+  {
+   "periode": "2003-2005",
+   "type_periode": "elu_local",
+   "poste": "Deuxième adjoint au Maire de Cotonou, chargé des questions domaniales, foncières et de sécurité",
+   "institution": "Mairie de Cotonou (maire : Nicéphore Soglo)",
+   "contexte_historique": "Candidat naturel de la RB à la mairie, finalement 2e adjoint (mars 2003 - déc. 2005). L'expérience lui fait constater que la décentralisation est 'mal partie' faute de transfert des compétences aux communes.",
+   "realisations_cles": [
+    "Gestion des questions domaniales, foncières et de sécurité de la plus grande ville du pays",
+    "Article 'Gouvernance locale : la décentralisation béninoise en panne' (2005), intégré au recueil Bonne gouvernance au Bénin"
+   ],
+   "textes_loi_associes": [],
+   "citations_presse": []
+  },
+  {
+   "periode": "2006",
+   "type_periode": "presidentielle_2006",
+   "poste": "Candidat à l'élection présidentielle du 5 mars 2006",
+   "institution": "Candidature indépendante (issu de la RB, alors divisée)",
+   "contexte_historique": "26 candidats au premier tour ; n°24 sur le bulletin de vote ; élection remportée par Thomas Boni Yayi. Un des trois candidats issus de la RB avec deux fils du président Soglo.",
+   "realisations_cles": [],
+   "textes_loi_associes": [],
+   "citations_presse": []
+  },
+  {
+   "periode": "2006-2009",
+   "type_periode": "commissions_boni_yayi",
+   "poste": "Président de commissions nationales, dont celle du nouveau découpage territorial",
+   "institution": "Présidence de la République (Boni Yayi)",
+   "contexte_historique": "Expertise constamment sollicitée après l'investiture de Boni Yayi. Les propositions de la commission découpage (désignation des chefs-lieux de département) sont restées sans suite avant son décès.",
+   "realisations_cles": [
+    "Conduite 'au pas de charge et avec esprit d'abnégation' des travaux de la commission sur le découpage territorial (V. Foly)"
+   ],
+   "textes_loi_associes": [],
+   "citations_presse": []
+  },
+  {
+   "periode": "2009-…",
+   "type_periode": "posthume",
+   "poste": "Mémoire et hommages",
+   "institution": null,
+   "contexte_historique": "Décès le 18 décembre 2009 ; hommages appuyés de la presse en 2009 puis au 10e anniversaire en 2019.",
+   "realisations_cles": [],
+   "textes_loi_associes": [],
+   "citations_presse": [
+    {
+     "texte": "Richard Adjaho est mort comme il a vécu, c'est-à-dire discrètement, sans crier gare, à l'image du grand commis d'État qu'il fut.",
+     "auteur": "Vincent Foly",
+     "source": "La Nouvelle Tribune",
+     "date": "2019-12-16",
+     "url": "https://lanouvelletribune.info/2019/12/il-etait-une-fois-un-grand-commis-de-letat/"
+    },
+    {
+     "texte": "Il est resté un gentleman de la politique au sens britannique du terme.",
+     "auteur": "Vincent Foly",
+     "source": "La Nouvelle Tribune",
+     "date": "2019-12-16",
+     "url": "https://lanouvelletribune.info/2019/12/il-etait-une-fois-un-grand-commis-de-letat/"
+    },
+    {
+     "texte": "Il a laissé dans l'administration publique l'image d'un homme décidé à faire changer les choses et à faire restaurer la compétence, la rigueur professionnelle et la bonne gouvernance.",
+     "auteur": "Constant Agbidinoukoun",
+     "source": "L'Événement Précis (via aCotonou)",
+     "date": "2019-12-18",
+     "url": "http://news.acotonou.com/h/123097.html"
+    }
+   ]
+  }
+ ],
+ "bibliographie": [
+  {
+   "titre": "La faillite du contrôle des finances publiques au Bénin (1960-1990)",
+   "editeur": "Éditions du Flamboyant",
+   "lieu": "Cotonou",
+   "annee": "1992",
+   "pages": 206,
+   "isbn": null,
+   "co_auteur": null,
+   "resume_analytique": "Bilan critique de trente ans de contrôle des finances publiques béninoises, de l'indépendance à la Conférence nationale, préfacé par Philippe Jurgensen. Ouvrage de référence cité dans la recherche académique sur la corruption et la gouvernance en Afrique de l'Ouest.",
+   "piliers_gouvernance": [
+    "Contrôle des finances publiques",
+    "Redevabilité",
+    "Lutte contre l'impunité financière"
+   ],
+   "urls_reference": [
+    "https://www.econbiz.de/Record/la-faillite-du-contr%C3%B4le-des-finances-publiques-au-b%C3%A9nin-1960-1990-adjaho-richard/10000951044"
+   ]
+  },
+  {
+   "titre": "Bénin : Comprendre la réforme de l'administration territoriale en 45 questions",
+   "editeur": "Imprimerie C.N.P.M.S.",
+   "lieu": "Porto-Novo",
+   "annee": "1997 (2e éd. mai 1999)",
+   "pages": 74,
+   "isbn": null,
+   "co_auteur": "Mathias Gogan (ancien préfet)",
+   "resume_analytique": "Ouvrage pédagogique de vulgarisation de la réforme de l'administration territoriale, sous forme de 45 questions-réponses.",
+   "piliers_gouvernance": [
+    "Pédagogie de la réforme",
+    "Administration territoriale"
+   ],
+   "urls_reference": []
+  },
+  {
+   "titre": "Décentralisation au Bénin, en Afrique et ailleurs dans le monde : État sommaire et enjeux",
+   "editeur": "Éditions du Flamboyant",
+   "lieu": "Cotonou",
+   "annee": "2002",
+   "pages": 194,
+   "isbn": "9789991999906",
+   "co_auteur": null,
+   "resume_analytique": "Étude comparative de la décentralisation au Bénin, en Afrique et dans le monde, publiée l'année des premières élections communales béninoises.",
+   "piliers_gouvernance": [
+    "Décentralisation",
+    "Comparatisme institutionnel",
+    "Gouvernance locale"
+   ],
+   "urls_reference": [
+    "https://books.google.com/books/about/D%C3%A9centralisation_au_B%C3%A9nin_en_Afrique_e.html?id=RruOAAAAMAAJ"
+   ]
+  },
+  {
+   "titre": "Décentralisation : la question de la tutelle de l'État sur les collectivités locales",
+   "editeur": "Éditions du Flamboyant",
+   "lieu": "Cotonou",
+   "annee": "2004",
+   "pages": 125,
+   "isbn": "9789991941493",
+   "co_auteur": null,
+   "resume_analytique": "Analyse du dilemme central de la décentralisation béninoise : l'étendue de la tutelle de l'État sur les communes, écrite pendant son mandat d'adjoint au maire de Cotonou.",
+   "piliers_gouvernance": [
+    "Autonomie locale",
+    "Tutelle de l'État",
+    "Transfert de compétences"
+   ],
+   "urls_reference": []
+  },
+  {
+   "titre": "Bonne gouvernance au Bénin : ma contribution",
+   "editeur": "Éditions du Flamboyant",
+   "lieu": "Cotonou",
+   "annee": "2005 (septembre)",
+   "pages": 148,
+   "isbn": "9782909130781",
+   "co_auteur": null,
+   "resume_analytique": "Recueil d'essais dont les bonnes feuilles furent prépubliées dans La Nouvelle Tribune et deux autres quotidiens. Thèmes du nuage lexical Google Books : administration béninoise, finances publiques, comptables publics, entreprises publiques, fraude douanière (entrepôts fictifs), création d'emplois, secteur informel, réformes, UEMOA, collectivités locales. Contient l'article 'Gouvernance locale : la décentralisation béninoise en panne' (2005). NB : la fiche Google Books (id RFQWAQAAIAAJ) est mal titrée 'Kalétas, la mascarade' mais l'ISBN et le contenu correspondent bien à cet ouvrage.",
+   "piliers_gouvernance": [
+    "Compétence et rigueur professionnelle",
+    "Réforme de l'administration publique",
+    "Assainissement des finances publiques",
+    "Lutte contre la fraude",
+    "Emploi et secteur informel",
+    "Décentralisation effective"
+   ],
+   "urls_reference": [
+    "https://books.google.com/books/about/Bonne_gouvernance_au_B%C3%A9nin.html?id=RFQWAQAAIAAJ"
+   ]
+  }
+ ],
+ "archives_hommages": [
+  {
+   "source": "La Nouvelle Tribune",
+   "date_publication": "2009-12-21",
+   "titre_article": "Richard Adjaho a tiré sa révérence — Tout sur le parcours du disparu",
+   "auteur": "Benoît Mètonou",
+   "extrait_citation": "Une nouvelle qui a semé torpeur, tristesse et pleurs dans le cœur de ses proches ainsi qu'au sein du monde politique. […] Quand on parle de Richard Adjaho, c'est également l'encre d'une plume au service du développement qui a coulé.",
+   "url_origine": "https://lanouvelletribune.info/2009/12/richard-adjaho-a-tire-sa-reverence/"
+  },
+  {
+   "source": "24 Heures au Bénin (repris par le blog de Benoît Illassa)",
+   "date_publication": "2009-12-18",
+   "titre_article": "Carnet Noir : Richard Adjaho, ancien Ministre de l'Intérieur et ancien Ambassadeur du Bénin à Paris est décédé à Cotonou",
+   "auteur": "I.B.",
+   "extrait_citation": "Le ministre Richard Adjaho est décédé ce matin au Centre national hospitalier universitaire Hubert K. Maga de Cotonou des suites d'une intervention chirurgicale. […] Richard Adjaho a beaucoup contribué à la décentralisation béninoise.",
+   "url_origine": "https://illassa-benoit.over-blog.com/article-carnet-noir-richard-adjaho-ancien-ministre-de-l-interieur-et-ancien-ambassadeur-du-benin-a-paris-est-decede-a-cotonou-benin-41412560"
+  },
+  {
+   "source": "La Nouvelle Tribune",
+   "date_publication": "2019-12-16",
+   "titre_article": "Il était une fois, un grand commis de l'État !",
+   "auteur": "Vincent Foly",
+   "extrait_citation": "Traverser toute la période du PRPB comme directeur de ministère et président de conseil d'administration de plusieurs sociétés, sans avoir été encarté au Parti, sans avoir été épinglé par une commission d'enquête relevait de l'exploit.",
+   "url_origine": "https://lanouvelletribune.info/2019/12/il-etait-une-fois-un-grand-commis-de-letat/"
+  },
+  {
+   "source": "L'Événement Précis (via aCotonou.com)",
+   "date_publication": "2019-12-18",
+   "titre_article": "10 ans après le décès du pionnier de la décentralisation au Bénin : Constant Agbidinoukoun témoigne du leadership de Richard Adjaho",
+   "auteur": "Constant Agbidinoukoun",
+   "extrait_citation": "Je n'ai jamais travaillé autant dans ma vie de fonctionnaire. Sa rigueur est implacable ; sa détermination pour réussir tout ce qu'il entreprend est totale. […] On ne s'ennuie jamais en compagnie du ministre Richard ADJAHO !",
+   "url_origine": "http://news.acotonou.com/h/123097.html"
+  },
+  {
+   "source": "La Nation Bénin",
+   "date_publication": "2019-12",
+   "titre_article": "Dix ans après son décès : le ministre Richard Adjaho plus vivant que jamais !",
+   "auteur": null,
+   "extrait_citation": "(ARTICLE PERDU EN LIGNE — constat 2026-07-08 : lanationbenin.info en NXDOMAIN, non migré sur lanation.bj, aucun snapshot Wayback. Piste : archives papier/rédaction de La Nation.)",
+   "url_origine": "https://lanationbenin.info/dix-ans-apres-son-deces-le-ministre-richard-adjaho-plus-vivant-que-jamais/"
+  },
+  {
+   "source": "La Tribune de la Capitale",
+   "date_publication": "2019-02-28",
+   "titre_article": "Portrait à titre posthume — Richard Adjaho, un ambassadeur du Bénin en France hors pair",
+   "auteur": "Bachirou Assouma",
+   "extrait_citation": "« Il est jusque là, le meilleur ambassadeur du Bénin en France que notre pays ait connu » (Julien Sinzogan, plasticien). […] ce technocrate bon teint a marqué de façon positive son passage diplomatique en France à travers son humilité, son sens de l'écoute, son sens aigu de responsabilité, sa disponibilité permanente et son amour débordant pour ses compatriotes.",
+   "url_origine": "https://web.archive.org/web/20190409144742/http://latribunedelacapitale.com/societe/4707-portrait-a-titre-posthume-richard-adjaho-un-ambassadeur-du-benin-en-france-hors-pair.html"
+  },
+  {
+   "source": "La Nouvelle Tribune",
+   "date_publication": "2010-01-14",
+   "titre_article": "Décédé le 18 décembre 2009 : Richard Adjaho conduit à sa dernière demeure",
+   "auteur": "Fortuné Sossa",
+   "extrait_citation": "Dans la journée du mercredi, une messe corps présent lui a été célébrée en l'Église catholique Saint Michel de Cotonou. Ce culte religieux a été présidé par l'archevêque de Cotonou, Monseigneur Marcel Agboton assisté du Nonce apostolique. […] Il laisse derrière lui, une veuve et quatre enfants.",
+   "url_origine": "https://web.archive.org/web/20100117013516/http://www.lanouvelletribune.info/201001144995/une/decede-le-18-decembre-2009-richard-adjaho-conduit-a-sa-derniere-demeure.html"
+  }
+ ],
+ "notes_methodologiques": [
+  "Correction majeure : les ouvrages sont publiés aux Éditions du Flamboyant (Cotonou), pas chez L'Harmattan.",
+  "Correction chronologique : Ministre de l'Intérieur 1991-1993 (pas 1991-1996) ; ambassadeur en France 1994-1996.",
+  "L'intitulé exact du ministère est 'Intérieur, Sécurité et Administration territoriale' ; certaines sources tardives disent 'Décentralisation'.",
+  "Sources non extraites automatiquement (JS) : La Nation, Tribune de la Capitale, Hub Rural — à récupérer via navigateur ou Wayback Machine.",
+  "Le corpus des décrets 1991-1993 reste à inventorier sur sgg.gouv.bj (crawl du pattern /doc/decret-{annee}-{num}/download).",
+  "Fiche Google Books RFQWAQAAIAAJ mal titrée ('Kalétas, la mascarade') mais ISBN 9782909130781 = Bonne gouvernance au Bénin.",
+  "Collecte réalisée le 2026-07-07 ; citations retranscrites verbatim depuis les pages sources.",
+  "Récolte navigateur/Wayback du 2026-07-08 : photo officielle BBC 2006 récupérée (l'original de la photo aCotonou) ; textes intégraux Tribune de la Capitale (2019) et obsèques Nouvelle Tribune (14-01-2010) sauvés dans docs/archives/.",
+  "Sites morts constatés le 2026-07-08 : lanationbenin.info (NXDOMAIN, article 2019 perdu), latribunedelacapitale.com (NXDOMAIN), hubrural.org (domaine à vendre, interview non archivée).",
+  "Découverte connexe : article 24haubenin.info (2017) sur Agnès Adjaho, ambassadrice au Vatican (épouse)."
+ ]
+};
+window.PHOTOS = {
+ "objectif": 12,
+ "genere_le": "2026-07-07",
+ "note": "Récoltes des 2026-07-07/08 (harvest_from_catalog.py + Wayback Machine/navigateur). 5 images avec SHA-256 complet dans assets/images/ : 3 portraits authentiques (rangs 1, 2, 7 — le 7 est l'original BBC sans filigrane) + 2 couvertures basse résolution (rangs 3, 8). Impasses documentées par entrée (note_harvest) : La Nation et Hub Rural perdus en ligne, photo Tribune de la Capitale et photo 2009 jamais archivées. Textes intégraux récupérés dans docs/archives/.",
+ "bilan_recolte": {
+  "telechargees": 5,
+  "verifiees_visuellement": 5,
+  "faux_positif_ecarte": 1,
+  "a_recuperer": 7,
+  "objectif": 12
+ },
+ "photos": [
+  {
+   "rang": 1,
+   "description_alt": "Portrait de Richard Kokou Adjaho, ancien ministre de l'Intérieur du Bénin, en costume",
+   "page_source": "https://lanouvelletribune.info/2019/12/il-etait-une-fois-un-grand-commis-de-letat/",
+   "url_image": "https://lanouvelletribune.info/wp-content/uploads/adjaho-1.jpg",
+   "credit": "La Nouvelle Tribune",
+   "statut": "confirmee",
+   "sha256": "1b0bd05c84434136be574ea06db5935f29c97d609cdfeae65e2285b4197f314b",
+   "fichier_local": "assets/images/01_1b0bd05c8443.jpg",
+   "octets": 73653
+  },
+  {
+   "rang": 2,
+   "description_alt": "Richard Adjaho, 'Grand Commis de l'État' — portrait publié pour le 10e anniversaire de son décès",
+   "page_source": "http://news.acotonou.com/h/123097.html",
+   "url_image": "http://news.acotonou.com/img_photos/L/Richard-Adjaho.gif",
+   "credit": "aCotonou.com / DR — L'Événement Précis",
+   "statut": "confirmee",
+   "sha256": "aae13d19f025c3f9dd3ff2f1fe8eab3d8fb1d79d00ed4cf304f6f2acbd700158",
+   "fichier_local": "assets/images/02_aae13d19f025.gif",
+   "octets": 335201
+  },
+  {
+   "rang": 3,
+   "description_alt": "Couverture de l'ouvrage 'Bonne gouvernance au Bénin : ma contribution' (Éditions du Flamboyant, 2005)",
+   "page_source": "https://books.google.com/books/about/Bonne_gouvernance_au_B%C3%A9nin.html?id=RFQWAQAAIAAJ",
+   "url_image": "https://books.google.com/books/content?id=RFQWAQAAIAAJ&printsec=frontcover&img=1&zoom=1",
+   "credit": "Google Books / Éditions du Flamboyant",
+   "statut": "confirmee",
+   "sha256": "0f36a153bb9c6455ee6958ca017bc91ada4e892abcf3a12bcdaddaa7e7a7a778",
+   "fichier_local": "assets/images/03_0f36a153bb9c.jpg",
+   "octets": 2757,
+   "note_harvest": "Vraie couverture, mais basse résolution (128x214 px, maximum exposé par Google Books en vue « snippet »). Pour une meilleure qualité : numériser un exemplaire de l'ouvrage."
+  },
+  {
+   "rang": 4,
+   "description_alt": "Photo d'illustration de l'article commémoratif de La Nation, dix ans après le décès",
+   "page_source": "https://lanationbenin.info/dix-ans-apres-son-deces-le-ministre-richard-adjaho-plus-vivant-que-jamais/",
+   "url_image": null,
+   "credit": "La Nation Bénin",
+   "statut": "a_recuperer",
+   "sha256": null,
+   "note_harvest": "PERDUE EN LIGNE (constat 2026-07-08) : lanationbenin.info n'existe plus (NXDOMAIN), l'article n'a pas été migré sur lanation.bj (404) et la Wayback Machine n'a aucun snapshot. Reste : contacter la rédaction de La Nation (lanation.bj) ou l'ONIP pour les archives papier de déc. 2019."
+  },
+  {
+   "rang": 5,
+   "description_alt": "Richard Adjaho, ambassadeur du Bénin en France (1994-1996) — portrait posthume",
+   "page_source": "http://latribunedelacapitale.com/societe/4707-portrait-a-titre-posthume-richard-adjaho-un-ambassadeur-du-benin-en-france-hors-pair.html",
+   "url_image": null,
+   "credit": "La Tribune de la Capitale",
+   "statut": "a_recuperer",
+   "sha256": null,
+   "note_harvest": "Domaine latribunedelacapitale.com disparu (NXDOMAIN, constat 2026-07-08). Unique snapshot Wayback (2019-04-09) : TEXTE INTÉGRAL récupéré (docs/archives/tribune_capitale_2019-02-28_portrait_ambassadeur.md) mais la seule image archivée est une publicité — pas de photo d'Adjaho."
+  },
+  {
+   "rang": 6,
+   "description_alt": "Richard Adjaho lors de son interview sur la décentralisation béninoise",
+   "page_source": "http://www.hubrural.org/Interview-de-Richard-Adjaho-la.html",
+   "url_image": null,
+   "credit": "Hub Rural",
+   "statut": "a_recuperer",
+   "sha256": null,
+   "note_harvest": "hubrural.org est devenu un domaine parqué à vendre (constat 2026-07-08) et la Wayback Machine n'a AUCUNE capture d'une URL contenant 'adjaho' sur ce domaine. Interview probablement perdue en ligne."
+  },
+  {
+   "rang": 7,
+   "description_alt": "Photo officielle du candidat n°24 à l'élection présidentielle béninoise de mars 2006",
+   "page_source": "https://web.archive.org/web/20190420221956/http://www.bbc.co.uk/french/specials/136_benin_candidates/index.shtml",
+   "url_image": "https://web.archive.org/web/20190420221956im_/http://www.bbc.co.uk/staticarchive/e2e45db81a0d99c572251f4809ecffef0461fb71.gif",
+   "credit": "BBC Afrique (via Wayback Machine — bbc.co.uk inaccessible depuis cet environnement)",
+   "statut": "confirmee",
+   "sha256": "a27b74dc48bff4a7aa0cb3974cd179720f07dd1806b1edd6378abc6ceac4f109",
+   "fichier_local": "assets/images/07_a27b74dc48bf.gif",
+   "octets": 64158,
+   "note_harvest": "Photo officielle BBC Afrique (alt=\"Richard Adjaho\", 300 px) récupérée le 2026-07-08 via Wayback Machine. Même scène que la photo aCotonou (rang 2) mais SANS filigrane — c'est l'original. Bio BBC associée : « Précédemment 2ème adjoint au maire de Cotonou. Ancien ministre de la sécurité sous le président Soglo… »"
+  },
+  {
+   "rang": 8,
+   "description_alt": "Couverture de 'Décentralisation au Bénin, en Afrique et ailleurs dans le monde' (2002)",
+   "page_source": "https://books.google.com/books/about/D%C3%A9centralisation_au_B%C3%A9nin_en_Afrique_e.html?id=RruOAAAAMAAJ",
+   "url_image": "https://books.google.com/books/content?id=RruOAAAAMAAJ&printsec=frontcover&img=1&zoom=1",
+   "credit": "Google Books / Éditions du Flamboyant",
+   "statut": "confirmee",
+   "sha256": "8132479e71152e2d3f4f13fc397797e2d4b7dad1f727a2e93a231f0719b6df2e",
+   "fichier_local": "assets/images/08_8132479e7115.jpg",
+   "octets": 4286,
+   "note_harvest": "Vraie couverture (mention « Richard Adjaho, Inspecteur général des finances… Août 2002 - Première édition »), mais basse résolution (128x212 px, maximum Google Books). Numériser un exemplaire pour mieux."
+  },
+  {
+   "rang": 9,
+   "description_alt": "Couverture de 'La faillite du contrôle des finances publiques au Bénin (1960-1990)' (1992)",
+   "page_source": "https://www.econbiz.de/Record/la-faillite-du-contr%C3%B4le-des-finances-publiques-au-b%C3%A9nin-1960-1990-adjaho-richard/10000951044",
+   "url_image": null,
+   "credit": "Éditions du Flamboyant — à sourcer via BnF/WorldCat ou numérisation d'un exemplaire familial",
+   "statut": "a_recuperer",
+   "sha256": null,
+   "note_harvest": "L'og:image d'EconBiz est une bannière générique du site (« ECONBIZ — Find Economic Literature »), PAS la couverture du livre : écartée le 2026-07-07. EconBiz n'expose pas d'image de couverture pour cette notice."
+  },
+  {
+   "rang": 10,
+   "description_alt": "Richard Adjaho en fonction officielle sous la présidence Soglo (1991-1993)",
+   "page_source": "https://web.archive.org/web/2009*/24haubenin.com",
+   "url_image": null,
+   "credit": "Archives 24 Heures au Bénin / presse de 2009 via Wayback Machine",
+   "statut": "a_recuperer",
+   "sha256": null,
+   "note_harvest": "Article des obsèques retrouvé sur Wayback (La Nouvelle Tribune, 14-01-2010, texte sauvé dans docs/archives/) mais sa photo (images/stories/adjaho1.jpg) n'a jamais été archivée (404 im_, 0 snapshot CDX). La version 2009 en ligne du site actuel n'a pas de photo non plus."
+  },
+  {
+   "rang": 11,
+   "description_alt": "Richard Adjaho pendant la campagne présidentielle de 2006 (meeting ou dépôt de candidature)",
+   "page_source": "https://www.gettyimages.com/search/2/image?phrase=benin%20election%202006",
+   "url_image": null,
+   "credit": "Getty Images / AFP — recherche 'Benin election 2006 Cotonou' (licence à négocier)",
+   "statut": "a_recuperer",
+   "sha256": null
+  },
+  {
+   "rang": 12,
+   "description_alt": "Portrait familial de Richard Kokou Adjaho — photo de référence du site hommage",
+   "page_source": "archives_familiales",
+   "url_image": null,
+   "credit": "Famille Adjaho (recommandé : verser aussi un portrait libre de droits sur Wikimedia Commons, la fiche Wikipédia n'ayant aucune photo)",
+   "statut": "archives_familiales",
+   "sha256": null
+  }
+ ]
+};
