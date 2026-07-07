@@ -1,7 +1,7 @@
 {
   "objectif": 12,
   "genere_le": "2026-07-07",
-  "note": "Récoltes des 2026-07-07/08 (harvest_from_catalog.py + Wayback Machine/navigateur). 5 images avec SHA-256 complet dans site/photos/ : 3 portraits authentiques (rangs 1, 2, 7 — le 7 est l'original BBC sans filigrane) + 2 couvertures basse résolution (rangs 3, 8). Impasses documentées par entrée (note_harvest) : La Nation et Hub Rural perdus en ligne, photo Tribune de la Capitale et photo 2009 jamais archivées. Textes intégraux récupérés dans docs/archives/.",
+  "note": "Récoltes des 2026-07-07/08 (harvest_from_catalog.py + Wayback Machine/navigateur). 5 images avec SHA-256 complet dans assets/images/ : 3 portraits authentiques (rangs 1, 2, 7 — le 7 est l'original BBC sans filigrane) + 2 couvertures basse résolution (rangs 3, 8). Impasses documentées par entrée (note_harvest) : La Nation et Hub Rural perdus en ligne, photo Tribune de la Capitale et photo 2009 jamais archivées. Textes intégraux récupérés dans docs/archives/.",
   "bilan_recolte": {
     "telechargees": 5,
     "verifiees_visuellement": 5,
@@ -18,7 +18,7 @@
       "credit": "La Nouvelle Tribune",
       "statut": "confirmee",
       "sha256": "1b0bd05c84434136be574ea06db5935f29c97d609cdfeae65e2285b4197f314b",
-      "fichier_local": "site/photos/01_1b0bd05c8443.jpg",
+      "fichier_local": "assets/images/01_1b0bd05c8443.jpg",
       "octets": 73653
     },
     {
@@ -29,7 +29,7 @@
       "credit": "aCotonou.com / DR — L'Événement Précis",
       "statut": "confirmee",
       "sha256": "aae13d19f025c3f9dd3ff2f1fe8eab3d8fb1d79d00ed4cf304f6f2acbd700158",
-      "fichier_local": "site/photos/02_aae13d19f025.gif",
+      "fichier_local": "assets/images/02_aae13d19f025.gif",
       "octets": 335201
     },
     {
@@ -40,7 +40,7 @@
       "credit": "Google Books / Éditions du Flamboyant",
       "statut": "confirmee",
       "sha256": "0f36a153bb9c6455ee6958ca017bc91ada4e892abcf3a12bcdaddaa7e7a7a778",
-      "fichier_local": "site/photos/03_0f36a153bb9c.jpg",
+      "fichier_local": "assets/images/03_0f36a153bb9c.jpg",
       "octets": 2757,
       "note_harvest": "Vraie couverture, mais basse résolution (128x214 px, maximum exposé par Google Books en vue « snippet »). Pour une meilleure qualité : numériser un exemplaire de l'ouvrage."
     },
@@ -82,7 +82,7 @@
       "credit": "BBC Afrique (via Wayback Machine — bbc.co.uk inaccessible depuis cet environnement)",
       "statut": "confirmee",
       "sha256": "a27b74dc48bff4a7aa0cb3974cd179720f07dd1806b1edd6378abc6ceac4f109",
-      "fichier_local": "site/photos/07_a27b74dc48bf.gif",
+      "fichier_local": "assets/images/07_a27b74dc48bf.gif",
       "octets": 64158,
       "note_harvest": "Photo officielle BBC Afrique (alt=\"Richard Adjaho\", 300 px) récupérée le 2026-07-08 via Wayback Machine. Même scène que la photo aCotonou (rang 2) mais SANS filigrane — c'est l'original. Bio BBC associée : « Précédemment 2ème adjoint au maire de Cotonou. Ancien ministre de la sécurité sous le président Soglo… »"
     },
@@ -94,7 +94,7 @@
       "credit": "Google Books / Éditions du Flamboyant",
       "statut": "confirmee",
       "sha256": "8132479e71152e2d3f4f13fc397797e2d4b7dad1f727a2e93a231f0719b6df2e",
-      "fichier_local": "site/photos/08_8132479e7115.jpg",
+      "fichier_local": "assets/images/08_8132479e7115.jpg",
       "octets": 4286,
       "note_harvest": "Vraie couverture (mention « Richard Adjaho, Inspecteur général des finances… Août 2002 - Première édition »), mais basse résolution (128x212 px, maximum Google Books). Numériser un exemplaire pour mieux."
     },
