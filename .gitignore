@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Scraper outputs (regenerated locally)
+corpus/
+scraper/corpus/
+photos/
+scraper/photos/
+
+# OS
+.DS_Store
