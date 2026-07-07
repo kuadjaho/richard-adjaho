@@ -11,12 +11,12 @@
     const h = window.HERITAGE;
     const pages = h.bibliographie.reduce((n, o) => n + (o.pages || 0), 0);
     const tuiles = [
-      { valeur: "40", unite: "ans", label: "de trace publique, 1968–2009" },
+      { valeur: "40", unite: "ans", label: "de vie publique, de 1968 à 2009" },
       { valeur: String(h.chronologie_carriere.length), unite: "", label: "périodes d'une vie d'État" },
       { valeur: String(h.bibliographie.length), unite: "", label: "ouvrages publiés à Cotonou" },
-      { valeur: String(pages), unite: "p.", label: "de finances publiques et de décentralisation" },
+      { valeur: String(pages), unite: "", label: "pages écrites sur les finances publiques et la décentralisation" },
       { valeur: "3", unite: "", label: "corps d'inspection, jusqu'à Inspecteur général des Finances" },
-      { valeur: "n° 24", unite: "/ 26", label: "sur le bulletin de la présidentielle 2006" },
+      { valeur: "n° 24", unite: "/ 26", label: "sur le bulletin de la présidentielle de 2006" },
     ];
     conteneur.innerHTML = tuiles
       .map(

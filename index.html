@@ -56,10 +56,10 @@ tailwind.config = {
       <h1 class="reveal mt-4 font-serif text-5xl font-black leading-[1.02] md:text-7xl" style="--reveal-delay: 90ms">
         Richard<br>Kokou<br>Adjaho</h1>
       <p class="reveal mt-5 font-serif text-lg italic text-[--encre-2]" style="--reveal-delay: 180ms">
-        Djèrègbè, 1949 — Cotonou, 18 décembre 2009</p>
+        Djèrègbè, 1949 – Cotonou, 18 décembre 2009</p>
       <p class="reveal mt-6 max-w-md text-[0.95rem] leading-relaxed text-gray-600" style="--reveal-delay: 260ms">
         Inspecteur général des Finances, ministre de l'Intérieur du Renouveau démocratique,
-        ambassadeur du Bénin en France, l'un des pères de la décentralisation béninoise —
+        ambassadeur du Bénin en France, l'un des pères de la décentralisation béninoise,
         et l'encre d'une plume au service du développement.</p>
       <ul class="reveal mt-8 flex flex-wrap gap-2" style="--reveal-delay: 340ms" aria-label="Titres">
         <li class="rounded-full border border-[--filet] bg-white/60 px-3 py-1 text-xs">Administrateur civil</li>
@@ -74,7 +74,7 @@ tailwind.config = {
       <img src="assets/images/01_1b0bd05c8443.jpg"
            alt="Portrait de Richard Kokou Adjaho, ancien ministre de l'Intérieur du Bénin, en costume"
            class="w-full rounded-2xl border border-[--filet] object-cover shadow-lg" fetchpriority="high">
-      <figcaption class="mt-2 text-right text-[0.68rem] text-gray-400">Photo : La Nouvelle Tribune · authentifiée SHA-256</figcaption>
+      <figcaption class="mt-2 text-right text-[0.68rem] text-gray-400">Photo La Nouvelle Tribune, authentifiée</figcaption>
       <div class="absolute -left-3 -top-3 h-16 w-16 rounded-tl-2xl border-l-2 border-t-2 border-[--or]" aria-hidden="true"></div>
     </figure>
   </div>
@@ -116,7 +116,7 @@ tailwind.config = {
 <section id="hommages" class="scroll-mt-20">
   <div class="mx-auto max-w-6xl px-5 py-20">
     <header class="chapitre reveal mb-12 max-w-2xl" data-numero="Acte III">
-      <h2 class="font-serif text-3xl font-bold md:text-4xl">Les hommages, 2009&nbsp;→&nbsp;2019</h2>
+      <h2 class="font-serif text-3xl font-bold md:text-4xl">Les hommages, de 2009 à 2019</h2>
       <p class="mt-3 text-[0.95rem] leading-relaxed text-gray-600">
         Six voix de la presse béninoise, du carnet noir de décembre 2009 au dixième anniversaire.</p>
     </header>
@@ -130,7 +130,7 @@ tailwind.config = {
     <header class="chapitre reveal mb-12 max-w-2xl" data-numero="Acte IV">
       <h2 class="font-serif text-3xl font-bold md:text-4xl">La bibliothèque du Flamboyant</h2>
       <p class="mt-3 text-[0.95rem] leading-relaxed text-gray-600">
-        Cinq ouvrages, tous publiés à Cotonou — un legs intellectuel sur le contrôle des
+        Cinq ouvrages, tous publiés à Cotonou&nbsp;: un legs intellectuel sur le contrôle des
         finances publiques et la décentralisation.</p>
     </header>
     <div id="bibliotheque-conteneur" class="grid gap-10 lg:grid-cols-2 lg:gap-x-16"></div>
@@ -143,13 +143,12 @@ tailwind.config = {
     <header class="chapitre reveal mb-4 max-w-2xl" data-numero="Acte V">
       <h2 class="font-serif text-3xl font-bold md:text-4xl">La galerie et ses absences</h2>
       <p class="mt-3 text-[0.95rem] leading-relaxed text-gray-600">
-        Cinq photographies authentifiées par empreinte SHA-256 — et six traces d'archives
-        que le web a laissé s'effacer&nbsp;: domaines disparus, images jamais archivées.
-        Ici, la perte fait partie du récit.</p>
+        Cinq photographies authentifiées, six images aujourd'hui effacées du web,
+        et une place d'honneur laissée à la famille. Ici, la perte fait partie du récit.</p>
     </header>
     <p class="reveal mb-10 text-xs text-[--encre-2]">
-      Chaque image conservée est accompagnée de son certificat d'authenticité (empreinte cryptographique
-      calculée au téléchargement, source et crédit).</p>
+      Chaque image conservée est accompagnée de sa source, de son crédit et d'une empreinte
+      numérique qui garantit son authenticité.</p>
     <div id="galerie-conteneur"></div>
   </div>
 </section>
@@ -162,8 +161,8 @@ tailwind.config = {
       <h2 class="mt-3 font-serif text-3xl font-bold text-white md:text-4xl">Le corpus, en clair</h2>
       <p class="mt-3 text-[0.95rem] leading-relaxed text-gray-400">
         Ce site est intégralement généré depuis un corpus JSON versionné,
-        validé par un schéma <span class="text-gray-200">Pydantic v2</span> (schema_version 2.0).
-        Collecte OSINT des 7-8 juillet 2026, citations retranscrites verbatim.</p>
+        validé par un schéma <span class="text-gray-200">Pydantic v2</span> (version 2.0).
+        Collecte documentaire de juillet 2026, citations retranscrites mot pour mot.</p>
     </header>
 
     <div class="reveal mb-6 flex flex-wrap items-center gap-3 no-print">
@@ -180,8 +179,9 @@ tailwind.config = {
       <pre id="json-brut" class="json-pre mt-4" tabindex="0" aria-label="Corpus JSON brut"></pre>
     </details>
 
-    <details class="reveal mt-6">
-      <summary class="cursor-pointer text-sm text-gray-400 hover:text-gray-200">Notes méthodologiques ▸</summary>
+    <details class="reveal mt-6 group">
+      <summary class="cursor-pointer text-sm text-gray-400 hover:text-gray-200">
+        <span class="group-open:hidden">Notes méthodologiques ▸</span><span class="hidden group-open:inline">Notes méthodologiques ▾</span></summary>
       <ul id="notes-methodo" class="mt-4 list-disc space-y-2 pl-5 [&>li]:text-gray-400"></ul>
     </details>
   </div>
@@ -191,7 +191,7 @@ tailwind.config = {
 <footer class="border-t border-gray-800 bg-encre pb-10 pt-8 text-center text-xs text-gray-500">
   <p class="font-serif italic text-base text-gray-400">« Il est resté un gentleman de la politique au sens britannique du terme. »</p>
   <p class="mt-1">— Vincent Foly, La Nouvelle Tribune</p>
-  <p class="mt-6">Mémorial familial · corpus OSINT vérifié · dernière mise à jour&nbsp;: juillet 2026</p>
+  <p class="mt-6">Mémorial familial · corpus documentaire vérifié · dernière mise à jour&nbsp;: juillet 2026</p>
 </footer>
 
 <!-- ===================== LIGHTBOX ===================== -->

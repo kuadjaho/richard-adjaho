@@ -23,10 +23,10 @@
     },
     {
       "rang": 2,
-      "description_alt": "Richard Adjaho, 'Grand Commis de l'État' — portrait publié pour le 10e anniversaire de son décès",
+      "description_alt": "Richard Adjaho, « grand commis de l'État », portrait publié pour le dixième anniversaire de son décès",
       "page_source": "http://news.acotonou.com/h/123097.html",
       "url_image": "http://news.acotonou.com/img_photos/L/Richard-Adjaho.gif",
-      "credit": "aCotonou.com / DR — L'Événement Précis",
+      "credit": "aCotonou.com / L'Événement Précis, droits réservés",
       "statut": "confirmee",
       "sha256": "aae13d19f025c3f9dd3ff2f1fe8eab3d8fb1d79d00ed4cf304f6f2acbd700158",
       "fichier_local": "assets/images/02_aae13d19f025.gif",
@@ -34,7 +34,7 @@
     },
     {
       "rang": 3,
-      "description_alt": "Couverture de l'ouvrage 'Bonne gouvernance au Bénin : ma contribution' (Éditions du Flamboyant, 2005)",
+      "description_alt": "Couverture de l'ouvrage « Bonne gouvernance au Bénin : ma contribution » (Éditions du Flamboyant, 2005)",
       "page_source": "https://books.google.com/books/about/Bonne_gouvernance_au_B%C3%A9nin.html?id=RFQWAQAAIAAJ",
       "url_image": "https://books.google.com/books/content?id=RFQWAQAAIAAJ&printsec=frontcover&img=1&zoom=1",
       "credit": "Google Books / Éditions du Flamboyant",
@@ -56,7 +56,7 @@
     },
     {
       "rang": 5,
-      "description_alt": "Richard Adjaho, ambassadeur du Bénin en France (1994-1996) — portrait posthume",
+      "description_alt": "Richard Adjaho, ambassadeur du Bénin en France (1994-1996), portrait posthume",
       "page_source": "http://latribunedelacapitale.com/societe/4707-portrait-a-titre-posthume-richard-adjaho-un-ambassadeur-du-benin-en-france-hors-pair.html",
       "url_image": null,
       "credit": "La Tribune de la Capitale",
@@ -76,10 +76,10 @@
     },
     {
       "rang": 7,
-      "description_alt": "Photo officielle du candidat n°24 à l'élection présidentielle béninoise de mars 2006",
+      "description_alt": "Photo officielle du candidat n° 24 à l'élection présidentielle béninoise de mars 2006",
       "page_source": "https://web.archive.org/web/20190420221956/http://www.bbc.co.uk/french/specials/136_benin_candidates/index.shtml",
       "url_image": "https://web.archive.org/web/20190420221956im_/http://www.bbc.co.uk/staticarchive/e2e45db81a0d99c572251f4809ecffef0461fb71.gif",
-      "credit": "BBC Afrique (via Wayback Machine — bbc.co.uk inaccessible depuis cet environnement)",
+      "credit": "BBC Afrique, présidentielle de 2006 (archives du web)",
       "statut": "confirmee",
       "sha256": "a27b74dc48bff4a7aa0cb3974cd179720f07dd1806b1edd6378abc6ceac4f109",
       "fichier_local": "assets/images/07_a27b74dc48bf.gif",
@@ -88,7 +88,7 @@
     },
     {
       "rang": 8,
-      "description_alt": "Couverture de 'Décentralisation au Bénin, en Afrique et ailleurs dans le monde' (2002)",
+      "description_alt": "Couverture de « Décentralisation au Bénin, en Afrique et ailleurs dans le monde » (2002)",
       "page_source": "https://books.google.com/books/about/D%C3%A9centralisation_au_B%C3%A9nin_en_Afrique_e.html?id=RruOAAAAMAAJ",
       "url_image": "https://books.google.com/books/content?id=RruOAAAAMAAJ&printsec=frontcover&img=1&zoom=1",
       "credit": "Google Books / Éditions du Flamboyant",
@@ -100,7 +100,7 @@
     },
     {
       "rang": 9,
-      "description_alt": "Couverture de 'La faillite du contrôle des finances publiques au Bénin (1960-1990)' (1992)",
+      "description_alt": "Couverture de « La faillite du contrôle des finances publiques au Bénin » (1960-1990) (1992)",
       "page_source": "https://www.econbiz.de/Record/la-faillite-du-contr%C3%B4le-des-finances-publiques-au-b%C3%A9nin-1960-1990-adjaho-richard/10000951044",
       "url_image": null,
       "credit": "Éditions du Flamboyant — à sourcer via BnF/WorldCat ou numérisation d'un exemplaire familial",
@@ -129,7 +129,7 @@
     },
     {
       "rang": 12,
-      "description_alt": "Portrait familial de Richard Kokou Adjaho — photo de référence du site hommage",
+      "description_alt": "Portrait familial de Richard Kokou Adjaho , photo de référence du site hommage",
       "page_source": "archives_familiales",
       "url_image": null,
       "credit": "Famille Adjaho (recommandé : verser aussi un portrait libre de droits sur Wikimedia Commons, la fiche Wikipédia n'ayant aucune photo)",

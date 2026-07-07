@@ -20,12 +20,30 @@
   const esc = (s) =>
     String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
+  // "2019-12-18" -> "18 décembre 2019" ; "2019-12" -> "décembre 2019" ; "2019" -> "2019".
+  const MOIS = ["janvier", "février", "mars", "avril", "mai", "juin",
+    "juillet", "août", "septembre", "octobre", "novembre", "décembre"];
+  window.dateFR = function (iso) {
+    if (!iso) return "";
+    const [a, m, j] = String(iso).split("-");
+    if (!m) return a;
+    const mois = MOIS[Number(m) - 1] || "";
+    if (!j) return `${mois} ${a}`;
+    const jour = Number(j) === 1 ? "1er" : String(Number(j));
+    return `${jour} ${mois} ${a}`;
+  };
+
+  // Périodes du corpus rendues en mots ("≈1968-1978" -> "Vers 1968-1978").
+  function periodeEnMots(p) {
+    return String(p).replace(/^≈/, "Vers ").replace(/-…$/, " et après");
+  }
+
   function badgeLoi(t) {
     const ok = t.statut_verification === "verifie";
     const badge = ok
       ? '<span class="badge-verifie" title="Source vérifiée">✓ vérifié</span>'
       : '<span class="badge-averifier" title="À vérifier">⚠ à vérifier</span>';
-    const titre = `${esc(t.reference)} — ${esc(t.titre)}`;
+    const titre = `${esc(t.reference)} · ${esc(t.titre)}`;
     const lien = t.url_source
       ? `<a href="${esc(t.url_source)}" target="_blank" rel="noopener" class="underline decoration-dotted underline-offset-2 hover:text-[--foret]">${titre}</a>`
       : titre;
@@ -34,9 +52,10 @@
   }
 
   function citation(c) {
+    const annee = c.date ? String(c.date).slice(0, 4) : "";
     return `<figure class="mt-4 border-l-2 border-[--or] pl-4">
       <blockquote class="font-serif italic text-[0.95rem] leading-relaxed text-gray-700">« ${esc(c.texte)} »</blockquote>
-      <figcaption class="mt-1 text-xs text-[--encre-2]">— ${esc(c.auteur || c.source)}, <cite>${esc(c.source)}</cite>${c.date ? " · " + esc(c.date) : ""}</figcaption>
+      <figcaption class="mt-1 text-xs text-[--encre-2]">— ${esc(c.auteur || c.source)}, <cite>${esc(c.source)}</cite>${annee ? ", " + annee : ""}</figcaption>
     </figure>`;
   }
 
@@ -55,7 +74,7 @@
     <li class="timeline-etape reveal relative pl-10 pb-12 md:pl-0 md:grid md:grid-cols-2 md:gap-10">
       <span class="timeline-puce" aria-hidden="true"></span>
       <div class="${gauche ? "md:col-start-1 md:text-right" : "md:col-start-2"} md:row-start-1">
-        <p class="timeline-annee text-2xl md:text-3xl">${esc(etape.periode)}</p>
+        <p class="timeline-annee text-2xl md:text-3xl">${esc(periodeEnMots(etape.periode))}</p>
         <p class="mt-0.5 text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-[--or]">
           ${esc(LIBELLES_PERIODES[etape.type_periode] || etape.type_periode)}</p>
       </div>

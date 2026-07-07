@@ -215,6 +215,10 @@ dialog.lightbox {
 dialog.lightbox::backdrop { background: rgba(15, 17, 21, 0.85); backdrop-filter: blur(3px); }
 dialog.lightbox img { max-height: 72vh; width: auto; max-width: 100%; margin: 0 auto; display: block; }
 
+/* ---------- Détails repliables : un seul marqueur (le nôtre) ---------- */
+summary { list-style: none; }
+summary::-webkit-details-marker { display: none; }
+
 /* ---------- JSON viewer ---------- */
 .json-pre {
   background: #101418;

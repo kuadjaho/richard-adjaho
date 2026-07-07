@@ -7,6 +7,25 @@
   const esc = (s) =>
     String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
+  // Explications en langue claire pour les images perdues (le détail technique
+  // reste dans data/photos_catalog.json, champ note_harvest).
+  const RAISONS = {
+    4: "L'article commémoratif de 2019 a disparu avec l'ancien site du journal, et aucune archive n'en conserve de copie. Les archives papier de La Nation restent la piste la plus sûre.",
+    5: "Le journal qui publiait ce portrait a disparu du web. Son texte intégral a pu être sauvé, mais la photographie n'y figurait pas.",
+    6: "Le site qui accueillait cette interview n'existe plus, et aucune archive n'en a gardé trace.",
+    9: "Aucune reproduction de cette couverture n'existe en ligne. La numérisation d'un exemplaire du livre permettrait de la restituer.",
+    10: "Le récit des obsèques a été retrouvé dans les archives du web, mais sa photographie n'y a jamais été enregistrée.",
+    11: "Des clichés de la campagne de 2006 existent dans les fonds des agences de presse. Leur licence reste à acquérir.",
+  };
+  const CREDITS_COURTS = {
+    4: "La Nation Bénin",
+    5: "La Tribune de la Capitale",
+    6: "Hub Rural",
+    9: "Éditions du Flamboyant",
+    10: "24 Heures au Bénin",
+    11: "Getty Images / AFP",
+  };
+
   function cartePhoto(p) {
     return `
     <figure class="photo-carte reveal group relative overflow-hidden rounded-xl border border-[--filet] bg-white shadow-sm"
@@ -19,8 +38,8 @@
       <figcaption class="p-4">
         <p class="text-sm leading-snug">${esc(p.description_alt)}</p>
         <p class="mt-2 text-xs text-[--encre-2]">${esc(p.credit)}</p>
-        <p class="mt-2 font-mono text-[0.62rem] text-gray-400" title="Empreinte SHA-256 complète : ${esc(p.sha256)}">
-          <span class="text-[--foret]">✓ authentifiée</span> · sha-256 ${esc((p.sha256 || "").slice(0, 16))}…</p>
+        <p class="mt-2 text-[0.68rem] font-medium text-[--foret]" title="Empreinte SHA-256 : ${esc(p.sha256)}">
+          ✓ Photographie authentifiée</p>
       </figcaption>
     </figure>`;
   }
@@ -33,19 +52,21 @@
         <p class="mt-4 font-serif text-[1.05rem] leading-snug">${esc(p.description_alt)}</p>
       </div>
       <figcaption class="mt-4">
-        <p class="text-xs leading-relaxed text-[--encre-2]">${esc(p.note_harvest || "Image à retrouver.")}</p>
-        <p class="mt-2 text-[0.68rem] uppercase tracking-wider text-gray-400">${esc(p.credit)}</p>
+        <p class="text-xs leading-relaxed text-[--encre-2]">${esc(RAISONS[p.rang] || "Image encore à retrouver.")}</p>
+        <p class="mt-2 text-[0.68rem] uppercase tracking-wider text-gray-400">${esc(CREDITS_COURTS[p.rang] || p.credit)}</p>
       </figcaption>
     </figure>`;
   }
 
-  function carteFamille(p) {
+  function carteFamille() {
     return `
     <figure class="cadre-famille reveal rounded-xl p-8 sm:col-span-2 lg:col-span-3 text-center">
       <p class="font-serif italic text-xl md:text-2xl text-[--foret] text-balance">
         Cet emplacement attend la photographie que seule une famille peut offrir.</p>
       <p class="mt-4 max-w-xl mx-auto text-sm text-[--encre-2] leading-relaxed">
-        ${esc(p.description_alt)}. ${esc(p.credit)}</p>
+        Le portrait de référence du mémorial, choisi par les siens. Un exemplaire libre de droits
+        pourra aussi être versé sur Wikimedia Commons&nbsp;: la page Wikipédia consacrée à
+        Richard Adjaho n'a aujourd'hui aucune photographie.</p>
       <p class="mt-5 text-[0.68rem] uppercase tracking-[0.25em] text-[--or]">Réservé aux archives de la famille Adjaho</p>
     </figure>`;
   }
@@ -57,7 +78,7 @@
     dlg.querySelector("img").alt = p.description_alt;
     dlg.querySelector(".lb-desc").textContent = p.description_alt;
     dlg.querySelector(".lb-credit").textContent = p.credit;
-    dlg.querySelector(".lb-sha").textContent = "SHA-256 : " + p.sha256;
+    dlg.querySelector(".lb-sha").textContent = "Empreinte SHA-256 : " + p.sha256;
     dlg.showModal();
   }
 
@@ -71,7 +92,7 @@
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         ${reelles.map(cartePhoto).join("")}
         ${perdues.map(carteTrace).join("")}
-        ${famille ? carteFamille(famille) : ""}
+        ${famille ? carteFamille() : ""}
       </div>`;
 
     conteneur.querySelectorAll(".photo-carte").forEach((el) => {

@@ -65,7 +65,7 @@ window.HERITAGE = {
    "type_periode": "haut_fonctionnaire",
    "poste": "Directeur des études et de la planification au Ministère des Finances ; administrateur de la BOAD et de la Société des ciments d'Onigbolo ; Président du CA de la Banque béninoise de développement (BBD, 1982-1984)",
    "institution": "Ministère des Finances (ministre Isidore Amoussou), BOAD, BBD",
-   "contexte_historique": "Régime PRPB (marxiste-léniniste) — il traverse toute la période sans être encarté au Parti et sans être épinglé par une commission d'enquête, 'un exploit' selon la presse.",
+   "contexte_historique": "Régime PRPB (marxiste-léniniste). Il traverse toute la période sans être encarté au Parti et sans être épinglé par une commission d'enquête, « un exploit » selon la presse.",
    "realisations_cles": [
     "Accès très tôt aux postes de responsabilité dans l'administration publique béninoise",
     "Administration de deux institutions financières régionales et industrielles (BOAD, Ciments d'Onigbolo)"
@@ -98,7 +98,7 @@ window.HERITAGE = {
    "type_periode": "ministre_transition",
    "poste": "Ministre du Commerce, de l'Artisanat et du Tourisme (gouvernement de transition)",
    "institution": "Gouvernement de transition du Premier ministre Nicéphore Soglo",
-   "contexte_historique": "Nommé à 40 ans au sortir de la Conférence nationale des Forces vives de février 1990 — le Renouveau démocratique.",
+   "contexte_historique": "Nommé à 40 ans au sortir de la Conférence nationale des Forces vives de février 1990, celle du Renouveau démocratique.",
    "realisations_cles": [
     "Gestion du portefeuille commercial pendant la transition démocratique"
    ],
@@ -110,7 +110,7 @@ window.HERITAGE = {
    "type_periode": "ministre_interieur",
    "poste": "Ministre de l'Intérieur, de la Sécurité et de l'Administration territoriale",
    "institution": "Gouvernement du président Nicéphore Soglo",
-   "contexte_historique": "Premier gouvernement élu du Renouveau démocratique. NB : l'intitulé exact du portefeuille est 'Administration territoriale' (les sources tardives disent parfois 'Décentralisation'). Départ du gouvernement en 1993 (prise de parts dans une institution publique sur mauvais conseil, incompatible avec la Constitution).",
+   "contexte_historique": "Premier gouvernement élu du Renouveau démocratique. Il quitte le gouvernement en 1993, une prise de parts dans une institution publique, contractée sur mauvais conseil, s'étant révélée incompatible avec la Constitution.",
    "realisations_cles": [
     "Tournées nationales pour remettre policiers et forces de sécurité publique au travail",
     "Responsabilisation des élus locaux sur la gestion saine des affaires locales",
@@ -120,13 +120,13 @@ window.HERITAGE = {
    ],
    "textes_loi_associes": [
     {
-     "reference": "Décrets 1991-1993 (à inventorier)",
-     "titre": "Corpus des décrets signés/contresignés — crawl sgg.gouv.bj pattern /doc/decret-{annee}-{num}/download",
+     "reference": "Décrets 1991-1993",
+     "titre": "Corpus des décrets signés ou contresignés, à inventorier à la documenthèque du Secrétariat général du gouvernement",
      "url_source": "https://sgg.gouv.bj/documentheque/decrets/",
      "statut_verification": "a_verifier"
     },
     {
-     "reference": "FranceArchives 174d0f18e2e25bf573eba77f531647291af08cd4",
+     "reference": "FranceArchives",
      "titre": "Visite de M. Richard Adjaho, Ministre de l'Intérieur du Bénin",
      "url_source": "https://francearchives.gouv.fr/facomponent/174d0f18e2e25bf573eba77f531647291af08cd4",
      "statut_verification": "verifie"
@@ -150,12 +150,12 @@ window.HERITAGE = {
    "contexte_historique": "Remise des lettres de créance publiée au Journal officiel de la République française (Légifrance).",
    "realisations_cles": [
     "Renforcement de la coopération Paris–Porto-Novo dans la décentralisation, l'enseignement supérieur, la formation technique et professionnelle et la culture",
-    "A laissé 'des souvenirs inoubliables aux Béninois de la diaspora de l'époque' (V. Foly)"
+    "A laissé « des souvenirs inoubliables aux Béninois de la diaspora de l'époque » (V. Foly)"
    ],
    "textes_loi_associes": [
     {
-     "reference": "JORFTEXT000000732435",
-     "titre": "Remise de lettres de créance",
+     "reference": "Journal officiel (JORF)",
+     "titre": "Remise des lettres de créance",
      "url_source": "https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000732435&categorieLien=id",
      "statut_verification": "verifie"
     }
@@ -180,10 +180,10 @@ window.HERITAGE = {
    "type_periode": "elu_local",
    "poste": "Deuxième adjoint au Maire de Cotonou, chargé des questions domaniales, foncières et de sécurité",
    "institution": "Mairie de Cotonou (maire : Nicéphore Soglo)",
-   "contexte_historique": "Candidat naturel de la RB à la mairie, finalement 2e adjoint (mars 2003 - déc. 2005). L'expérience lui fait constater que la décentralisation est 'mal partie' faute de transfert des compétences aux communes.",
+   "contexte_historique": "Candidat naturel de la RB à la mairie, finalement 2e adjoint (mars 2003 - déc. 2005). L'expérience lui fait constater que la décentralisation est « mal partie » faute de transfert des compétences aux communes.",
    "realisations_cles": [
     "Gestion des questions domaniales, foncières et de sécurité de la plus grande ville du pays",
-    "Article 'Gouvernance locale : la décentralisation béninoise en panne' (2005), intégré au recueil Bonne gouvernance au Bénin"
+    "Article « Gouvernance locale : la décentralisation béninoise en panne » (2005), intégré au recueil Bonne gouvernance au Bénin"
    ],
    "textes_loi_associes": [],
    "citations_presse": []
@@ -193,7 +193,7 @@ window.HERITAGE = {
    "type_periode": "presidentielle_2006",
    "poste": "Candidat à l'élection présidentielle du 5 mars 2006",
    "institution": "Candidature indépendante (issu de la RB, alors divisée)",
-   "contexte_historique": "26 candidats au premier tour ; n°24 sur le bulletin de vote ; élection remportée par Thomas Boni Yayi. Un des trois candidats issus de la RB avec deux fils du président Soglo.",
+   "contexte_historique": "26 candidats au premier tour ; n° 24 sur le bulletin de vote ; élection remportée par Thomas Boni Yayi. Un des trois candidats issus de la RB avec deux fils du président Soglo.",
    "realisations_cles": [],
    "textes_loi_associes": [],
    "citations_presse": []
@@ -205,7 +205,7 @@ window.HERITAGE = {
    "institution": "Présidence de la République (Boni Yayi)",
    "contexte_historique": "Expertise constamment sollicitée après l'investiture de Boni Yayi. Les propositions de la commission découpage (désignation des chefs-lieux de département) sont restées sans suite avant son décès.",
    "realisations_cles": [
-    "Conduite 'au pas de charge et avec esprit d'abnégation' des travaux de la commission sur le découpage territorial (V. Foly)"
+    "Conduite « au pas de charge et avec esprit d'abnégation » des travaux de la commission sur le découpage territorial (V. Foly)"
    ],
    "textes_loi_associes": [],
    "citations_presse": []
@@ -319,7 +319,7 @@ window.HERITAGE = {
    "pages": 148,
    "isbn": "9782909130781",
    "co_auteur": null,
-   "resume_analytique": "Recueil d'essais dont les bonnes feuilles furent prépubliées dans La Nouvelle Tribune et deux autres quotidiens. Thèmes du nuage lexical Google Books : administration béninoise, finances publiques, comptables publics, entreprises publiques, fraude douanière (entrepôts fictifs), création d'emplois, secteur informel, réformes, UEMOA, collectivités locales. Contient l'article 'Gouvernance locale : la décentralisation béninoise en panne' (2005). NB : la fiche Google Books (id RFQWAQAAIAAJ) est mal titrée 'Kalétas, la mascarade' mais l'ISBN et le contenu correspondent bien à cet ouvrage.",
+   "resume_analytique": "Recueil d'essais dont les bonnes feuilles furent prépubliées dans La Nouvelle Tribune et deux autres quotidiens. Thèmes du nuage lexical Google Books : administration béninoise, finances publiques, comptables publics, entreprises publiques, fraude douanière (entrepôts fictifs), création d'emplois, secteur informel, réformes, UEMOA, collectivités locales. Contient l'article « Gouvernance locale : la décentralisation béninoise en panne » (2005). NB : la fiche Google Books (id RFQWAQAAIAAJ) est mal titrée 'Kalétas, la mascarade' mais l'ISBN et le contenu correspondent bien à cet ouvrage.",
    "piliers_gouvernance": [
     "Compétence et rigueur professionnelle",
     "Réforme de l'administration publique",
@@ -429,10 +429,10 @@ window.PHOTOS = {
   },
   {
    "rang": 2,
-   "description_alt": "Richard Adjaho, 'Grand Commis de l'État' — portrait publié pour le 10e anniversaire de son décès",
+   "description_alt": "Richard Adjaho, « grand commis de l'État », portrait publié pour le dixième anniversaire de son décès",
    "page_source": "http://news.acotonou.com/h/123097.html",
    "url_image": "http://news.acotonou.com/img_photos/L/Richard-Adjaho.gif",
-   "credit": "aCotonou.com / DR — L'Événement Précis",
+   "credit": "aCotonou.com / L'Événement Précis, droits réservés",
    "statut": "confirmee",
    "sha256": "aae13d19f025c3f9dd3ff2f1fe8eab3d8fb1d79d00ed4cf304f6f2acbd700158",
    "fichier_local": "assets/images/02_aae13d19f025.gif",
@@ -440,7 +440,7 @@ window.PHOTOS = {
   },
   {
    "rang": 3,
-   "description_alt": "Couverture de l'ouvrage 'Bonne gouvernance au Bénin : ma contribution' (Éditions du Flamboyant, 2005)",
+   "description_alt": "Couverture de l'ouvrage « Bonne gouvernance au Bénin : ma contribution » (Éditions du Flamboyant, 2005)",
    "page_source": "https://books.google.com/books/about/Bonne_gouvernance_au_B%C3%A9nin.html?id=RFQWAQAAIAAJ",
    "url_image": "https://books.google.com/books/content?id=RFQWAQAAIAAJ&printsec=frontcover&img=1&zoom=1",
    "credit": "Google Books / Éditions du Flamboyant",
@@ -462,7 +462,7 @@ window.PHOTOS = {
   },
   {
    "rang": 5,
-   "description_alt": "Richard Adjaho, ambassadeur du Bénin en France (1994-1996) — portrait posthume",
+   "description_alt": "Richard Adjaho, ambassadeur du Bénin en France (1994-1996), portrait posthume",
    "page_source": "http://latribunedelacapitale.com/societe/4707-portrait-a-titre-posthume-richard-adjaho-un-ambassadeur-du-benin-en-france-hors-pair.html",
    "url_image": null,
    "credit": "La Tribune de la Capitale",
@@ -482,10 +482,10 @@ window.PHOTOS = {
   },
   {
    "rang": 7,
-   "description_alt": "Photo officielle du candidat n°24 à l'élection présidentielle béninoise de mars 2006",
+   "description_alt": "Photo officielle du candidat n° 24 à l'élection présidentielle béninoise de mars 2006",
    "page_source": "https://web.archive.org/web/20190420221956/http://www.bbc.co.uk/french/specials/136_benin_candidates/index.shtml",
    "url_image": "https://web.archive.org/web/20190420221956im_/http://www.bbc.co.uk/staticarchive/e2e45db81a0d99c572251f4809ecffef0461fb71.gif",
-   "credit": "BBC Afrique (via Wayback Machine — bbc.co.uk inaccessible depuis cet environnement)",
+   "credit": "BBC Afrique, présidentielle de 2006 (archives du web)",
    "statut": "confirmee",
    "sha256": "a27b74dc48bff4a7aa0cb3974cd179720f07dd1806b1edd6378abc6ceac4f109",
    "fichier_local": "assets/images/07_a27b74dc48bf.gif",
@@ -494,7 +494,7 @@ window.PHOTOS = {
   },
   {
    "rang": 8,
-   "description_alt": "Couverture de 'Décentralisation au Bénin, en Afrique et ailleurs dans le monde' (2002)",
+   "description_alt": "Couverture de « Décentralisation au Bénin, en Afrique et ailleurs dans le monde » (2002)",
    "page_source": "https://books.google.com/books/about/D%C3%A9centralisation_au_B%C3%A9nin_en_Afrique_e.html?id=RruOAAAAMAAJ",
    "url_image": "https://books.google.com/books/content?id=RruOAAAAMAAJ&printsec=frontcover&img=1&zoom=1",
    "credit": "Google Books / Éditions du Flamboyant",
@@ -506,7 +506,7 @@ window.PHOTOS = {
   },
   {
    "rang": 9,
-   "description_alt": "Couverture de 'La faillite du contrôle des finances publiques au Bénin (1960-1990)' (1992)",
+   "description_alt": "Couverture de « La faillite du contrôle des finances publiques au Bénin » (1960-1990) (1992)",
    "page_source": "https://www.econbiz.de/Record/la-faillite-du-contr%C3%B4le-des-finances-publiques-au-b%C3%A9nin-1960-1990-adjaho-richard/10000951044",
    "url_image": null,
    "credit": "Éditions du Flamboyant — à sourcer via BnF/WorldCat ou numérisation d'un exemplaire familial",
@@ -535,7 +535,7 @@ window.PHOTOS = {
   },
   {
    "rang": 12,
-   "description_alt": "Portrait familial de Richard Kokou Adjaho — photo de référence du site hommage",
+   "description_alt": "Portrait familial de Richard Kokou Adjaho , photo de référence du site hommage",
    "page_source": "archives_familiales",
    "url_image": null,
    "credit": "Famille Adjaho (recommandé : verser aussi un portrait libre de droits sur Wikimedia Commons, la fiche Wikipédia n'ayant aucune photo)",
