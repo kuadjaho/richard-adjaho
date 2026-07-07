@@ -1,8 +1,14 @@
 {
   "objectif": 12,
   "genere_le": "2026-07-07",
-  "note": "Récolte du 2026-07-07 (scraper/harvest_from_catalog.py). 4 images téléchargées avec SHA-256 complet dans site/photos/ : 2 portraits authentiques (rangs 1-2, vérifiés visuellement) + 2 couvertures d'ouvrages basse résolution (rangs 3, 8). Rang 9 écarté (faux positif : bannière EconBiz). Rangs 4-7, 10-12 restent à récupérer manuellement (sites injoignables, Wayback/Getty, archives familiales).",
-  "bilan_recolte": {"telechargees": 4, "verifiees_visuellement": 4, "faux_positif_ecarte": 1, "a_recuperer": 8, "objectif": 12},
+  "note": "Récoltes des 2026-07-07/08 (harvest_from_catalog.py + Wayback Machine/navigateur). 5 images avec SHA-256 complet dans site/photos/ : 3 portraits authentiques (rangs 1, 2, 7 — le 7 est l'original BBC sans filigrane) + 2 couvertures basse résolution (rangs 3, 8). Impasses documentées par entrée (note_harvest) : La Nation et Hub Rural perdus en ligne, photo Tribune de la Capitale et photo 2009 jamais archivées. Textes intégraux récupérés dans docs/archives/.",
+  "bilan_recolte": {
+    "telechargees": 5,
+    "verifiees_visuellement": 5,
+    "faux_positif_ecarte": 1,
+    "a_recuperer": 7,
+    "objectif": 12
+  },
   "photos": [
     {
       "rang": 1,
@@ -45,7 +51,8 @@
       "url_image": null,
       "credit": "La Nation Bénin",
       "statut": "a_recuperer",
-      "sha256": null
+      "sha256": null,
+      "note_harvest": "PERDUE EN LIGNE (constat 2026-07-08) : lanationbenin.info n'existe plus (NXDOMAIN), l'article n'a pas été migré sur lanation.bj (404) et la Wayback Machine n'a aucun snapshot. Reste : contacter la rédaction de La Nation (lanation.bj) ou l'ONIP pour les archives papier de déc. 2019."
     },
     {
       "rang": 5,
@@ -54,7 +61,8 @@
       "url_image": null,
       "credit": "La Tribune de la Capitale",
       "statut": "a_recuperer",
-      "sha256": null
+      "sha256": null,
+      "note_harvest": "Domaine latribunedelacapitale.com disparu (NXDOMAIN, constat 2026-07-08). Unique snapshot Wayback (2019-04-09) : TEXTE INTÉGRAL récupéré (docs/archives/tribune_capitale_2019-02-28_portrait_ambassadeur.md) mais la seule image archivée est une publicité — pas de photo d'Adjaho."
     },
     {
       "rang": 6,
@@ -63,16 +71,20 @@
       "url_image": null,
       "credit": "Hub Rural",
       "statut": "a_recuperer",
-      "sha256": null
+      "sha256": null,
+      "note_harvest": "hubrural.org est devenu un domaine parqué à vendre (constat 2026-07-08) et la Wayback Machine n'a AUCUNE capture d'une URL contenant 'adjaho' sur ce domaine. Interview probablement perdue en ligne."
     },
     {
       "rang": 7,
       "description_alt": "Photo officielle du candidat n°24 à l'élection présidentielle béninoise de mars 2006",
-      "page_source": "https://web.archive.org/web/2006*/bbc.co.uk/french/specials/136_benin_candidates/*",
-      "url_image": null,
+      "page_source": "https://web.archive.org/web/20190420221956/http://www.bbc.co.uk/french/specials/136_benin_candidates/index.shtml",
+      "url_image": "https://web.archive.org/web/20190420221956im_/http://www.bbc.co.uk/staticarchive/e2e45db81a0d99c572251f4809ecffef0461fb71.gif",
       "credit": "BBC Afrique (via Wayback Machine — bbc.co.uk inaccessible depuis cet environnement)",
-      "statut": "a_recuperer",
-      "sha256": null
+      "statut": "confirmee",
+      "sha256": "a27b74dc48bff4a7aa0cb3974cd179720f07dd1806b1edd6378abc6ceac4f109",
+      "fichier_local": "site/photos/07_a27b74dc48bf.gif",
+      "octets": 64158,
+      "note_harvest": "Photo officielle BBC Afrique (alt=\"Richard Adjaho\", 300 px) récupérée le 2026-07-08 via Wayback Machine. Même scène que la photo aCotonou (rang 2) mais SANS filigrane — c'est l'original. Bio BBC associée : « Précédemment 2ème adjoint au maire de Cotonou. Ancien ministre de la sécurité sous le président Soglo… »"
     },
     {
       "rang": 8,
@@ -103,7 +115,8 @@
       "url_image": null,
       "credit": "Archives 24 Heures au Bénin / presse de 2009 via Wayback Machine",
       "statut": "a_recuperer",
-      "sha256": null
+      "sha256": null,
+      "note_harvest": "Article des obsèques retrouvé sur Wayback (La Nouvelle Tribune, 14-01-2010, texte sauvé dans docs/archives/) mais sa photo (images/stories/adjaho1.jpg) n'a jamais été archivée (404 im_, 0 snapshot CDX). La version 2009 en ligne du site actuel n'a pas de photo non plus."
     },
     {
       "rang": 11,

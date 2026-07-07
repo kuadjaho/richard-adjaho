@@ -9,18 +9,43 @@
       "lieu_deces": "CNHU Hubert K. Maga, Cotonou (Bénin)",
       "cause_deces": "Accident cardio-vasculaire suivi d'une intervention chirurgicale cérébrale qu'il n'a pas supportée (admis au CNHU le mardi précédent, évacuation sanitaire prévue)"
     },
-    "titres": ["Administrateur civil", "Inspecteur général des Finances", "Ministre", "Ambassadeur", "Écrivain", "Enseignant (ENEAM/ENAM)"],
-    "corps": ["Inspecteur d'État", "Inspecteur des Finances", "Inspecteur général des Finances"],
+    "titres": [
+      "Administrateur civil",
+      "Inspecteur général des Finances",
+      "Ministre",
+      "Ambassadeur",
+      "Écrivain",
+      "Enseignant (ENEAM/ENAM)"
+    ],
+    "corps": [
+      "Inspecteur d'État",
+      "Inspecteur des Finances",
+      "Inspecteur général des Finances"
+    ],
     "formation": [
-      {"diplome": "Diplôme de 3e cycle en sciences économiques", "institution": "Université Paris-Sorbonne", "remarque": null},
-      {"diplome": "Diplôme de second cycle", "institution": "Institut international d'administration publique (IIAP), Paris", "remarque": null},
-      {"diplome": "Auditorat", "institution": "Cour des comptes, Paris", "remarque": "Retour au Bénin en 1978 après ses études supérieures en France"}
+      {
+        "diplome": "Diplôme de 3e cycle en sciences économiques",
+        "institution": "Université Paris-Sorbonne",
+        "remarque": null
+      },
+      {
+        "diplome": "Diplôme de second cycle",
+        "institution": "Institut international d'administration publique (IIAP), Paris",
+        "remarque": null
+      },
+      {
+        "diplome": "Auditorat",
+        "institution": "Cour des comptes, Paris",
+        "remarque": "Retour au Bénin en 1978 après ses études supérieures en France"
+      }
     ],
     "famille": {
       "epouse": "Agnès Avognon Adjaho (ambassadrice du Bénin en Italie et près le Saint-Siège en 2019)",
       "enfants": "Quatre enfants"
     },
-    "partis": ["Renaissance du Bénin (RB) — militant actif, puis en froid avec le parti avant 2006"]
+    "partis": [
+      "Renaissance du Bénin (RB) — militant actif, puis en froid avec le parti avant 2006"
+    ]
   },
   "chronologie_carriere": [
     {
@@ -72,7 +97,9 @@
       "poste": "Ministre du Commerce, de l'Artisanat et du Tourisme (gouvernement de transition)",
       "institution": "Gouvernement de transition du Premier ministre Nicéphore Soglo",
       "contexte_historique": "Nommé à 40 ans au sortir de la Conférence nationale des Forces vives de février 1990 — le Renouveau démocratique.",
-      "realisations_cles": ["Gestion du portefeuille commercial pendant la transition démocratique"],
+      "realisations_cles": [
+        "Gestion du portefeuille commercial pendant la transition démocratique"
+      ],
       "textes_loi_associes": [],
       "citations_presse": []
     },
@@ -90,8 +117,18 @@
         "Visite officielle en France en qualité de Ministre de l'Intérieur (documentée par FranceArchives)"
       ],
       "textes_loi_associes": [
-        {"reference": "Décrets 1991-1993 (à inventorier)", "titre": "Corpus des décrets signés/contresignés — crawl sgg.gouv.bj pattern /doc/decret-{annee}-{num}/download", "url_source": "https://sgg.gouv.bj/documentheque/decrets/", "statut_verification": "a_verifier"},
-        {"reference": "FranceArchives 174d0f18e2e25bf573eba77f531647291af08cd4", "titre": "Visite de M. Richard Adjaho, Ministre de l'Intérieur du Bénin", "url_source": "https://francearchives.gouv.fr/facomponent/174d0f18e2e25bf573eba77f531647291af08cd4", "statut_verification": "verifie"}
+        {
+          "reference": "Décrets 1991-1993 (à inventorier)",
+          "titre": "Corpus des décrets signés/contresignés — crawl sgg.gouv.bj pattern /doc/decret-{annee}-{num}/download",
+          "url_source": "https://sgg.gouv.bj/documentheque/decrets/",
+          "statut_verification": "a_verifier"
+        },
+        {
+          "reference": "FranceArchives 174d0f18e2e25bf573eba77f531647291af08cd4",
+          "titre": "Visite de M. Richard Adjaho, Ministre de l'Intérieur du Bénin",
+          "url_source": "https://francearchives.gouv.fr/facomponent/174d0f18e2e25bf573eba77f531647291af08cd4",
+          "statut_verification": "verifie"
+        }
       ],
       "citations_presse": [
         {
@@ -114,7 +151,12 @@
         "A laissé 'des souvenirs inoubliables aux Béninois de la diaspora de l'époque' (V. Foly)"
       ],
       "textes_loi_associes": [
-        {"reference": "JORFTEXT000000732435", "titre": "Remise de lettres de créance", "url_source": "https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000732435&categorieLien=id", "statut_verification": "verifie"}
+        {
+          "reference": "JORFTEXT000000732435",
+          "titre": "Remise de lettres de créance",
+          "url_source": "https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000732435&categorieLien=id",
+          "statut_verification": "verifie"
+        }
       ],
       "citations_presse": []
     },
@@ -209,8 +251,14 @@
       "isbn": null,
       "co_auteur": null,
       "resume_analytique": "Bilan critique de trente ans de contrôle des finances publiques béninoises, de l'indépendance à la Conférence nationale, préfacé par Philippe Jurgensen. Ouvrage de référence cité dans la recherche académique sur la corruption et la gouvernance en Afrique de l'Ouest.",
-      "piliers_gouvernance": ["Contrôle des finances publiques", "Redevabilité", "Lutte contre l'impunité financière"],
-      "urls_reference": ["https://www.econbiz.de/Record/la-faillite-du-contr%C3%B4le-des-finances-publiques-au-b%C3%A9nin-1960-1990-adjaho-richard/10000951044"]
+      "piliers_gouvernance": [
+        "Contrôle des finances publiques",
+        "Redevabilité",
+        "Lutte contre l'impunité financière"
+      ],
+      "urls_reference": [
+        "https://www.econbiz.de/Record/la-faillite-du-contr%C3%B4le-des-finances-publiques-au-b%C3%A9nin-1960-1990-adjaho-richard/10000951044"
+      ]
     },
     {
       "titre": "Bénin : Comprendre la réforme de l'administration territoriale en 45 questions",
@@ -221,7 +269,10 @@
       "isbn": null,
       "co_auteur": "Mathias Gogan (ancien préfet)",
       "resume_analytique": "Ouvrage pédagogique de vulgarisation de la réforme de l'administration territoriale, sous forme de 45 questions-réponses.",
-      "piliers_gouvernance": ["Pédagogie de la réforme", "Administration territoriale"],
+      "piliers_gouvernance": [
+        "Pédagogie de la réforme",
+        "Administration territoriale"
+      ],
       "urls_reference": []
     },
     {
@@ -233,8 +284,14 @@
       "isbn": "9789991999906",
       "co_auteur": null,
       "resume_analytique": "Étude comparative de la décentralisation au Bénin, en Afrique et dans le monde, publiée l'année des premières élections communales béninoises.",
-      "piliers_gouvernance": ["Décentralisation", "Comparatisme institutionnel", "Gouvernance locale"],
-      "urls_reference": ["https://books.google.com/books/about/D%C3%A9centralisation_au_B%C3%A9nin_en_Afrique_e.html?id=RruOAAAAMAAJ"]
+      "piliers_gouvernance": [
+        "Décentralisation",
+        "Comparatisme institutionnel",
+        "Gouvernance locale"
+      ],
+      "urls_reference": [
+        "https://books.google.com/books/about/D%C3%A9centralisation_au_B%C3%A9nin_en_Afrique_e.html?id=RruOAAAAMAAJ"
+      ]
     },
     {
       "titre": "Décentralisation : la question de la tutelle de l'État sur les collectivités locales",
@@ -245,7 +302,11 @@
       "isbn": "9789991941493",
       "co_auteur": null,
       "resume_analytique": "Analyse du dilemme central de la décentralisation béninoise : l'étendue de la tutelle de l'État sur les communes, écrite pendant son mandat d'adjoint au maire de Cotonou.",
-      "piliers_gouvernance": ["Autonomie locale", "Tutelle de l'État", "Transfert de compétences"],
+      "piliers_gouvernance": [
+        "Autonomie locale",
+        "Tutelle de l'État",
+        "Transfert de compétences"
+      ],
       "urls_reference": []
     },
     {
@@ -257,8 +318,17 @@
       "isbn": "9782909130781",
       "co_auteur": null,
       "resume_analytique": "Recueil d'essais dont les bonnes feuilles furent prépubliées dans La Nouvelle Tribune et deux autres quotidiens. Thèmes du nuage lexical Google Books : administration béninoise, finances publiques, comptables publics, entreprises publiques, fraude douanière (entrepôts fictifs), création d'emplois, secteur informel, réformes, UEMOA, collectivités locales. Contient l'article 'Gouvernance locale : la décentralisation béninoise en panne' (2005). NB : la fiche Google Books (id RFQWAQAAIAAJ) est mal titrée 'Kalétas, la mascarade' mais l'ISBN et le contenu correspondent bien à cet ouvrage.",
-      "piliers_gouvernance": ["Compétence et rigueur professionnelle", "Réforme de l'administration publique", "Assainissement des finances publiques", "Lutte contre la fraude", "Emploi et secteur informel", "Décentralisation effective"],
-      "urls_reference": ["https://books.google.com/books/about/Bonne_gouvernance_au_B%C3%A9nin.html?id=RFQWAQAAIAAJ"]
+      "piliers_gouvernance": [
+        "Compétence et rigueur professionnelle",
+        "Réforme de l'administration publique",
+        "Assainissement des finances publiques",
+        "Lutte contre la fraude",
+        "Emploi et secteur informel",
+        "Décentralisation effective"
+      ],
+      "urls_reference": [
+        "https://books.google.com/books/about/Bonne_gouvernance_au_B%C3%A9nin.html?id=RFQWAQAAIAAJ"
+      ]
     }
   ],
   "archives_hommages": [
@@ -299,7 +369,7 @@
       "date_publication": "2019-12",
       "titre_article": "Dix ans après son décès : le ministre Richard Adjaho plus vivant que jamais !",
       "auteur": null,
-      "extrait_citation": "(Page rendue côté client — contenu à extraire via navigateur ou archive ; référencée pour le site.)",
+      "extrait_citation": "(ARTICLE PERDU EN LIGNE — constat 2026-07-08 : lanationbenin.info en NXDOMAIN, non migré sur lanation.bj, aucun snapshot Wayback. Piste : archives papier/rédaction de La Nation.)",
       "url_origine": "https://lanationbenin.info/dix-ans-apres-son-deces-le-ministre-richard-adjaho-plus-vivant-que-jamais/"
     },
     {
@@ -307,8 +377,16 @@
       "date_publication": "2019-02-28",
       "titre_article": "Portrait à titre posthume — Richard Adjaho, un ambassadeur du Bénin en France hors pair",
       "auteur": "Bachirou Assouma",
-      "extrait_citation": "(Page rendue côté client — contenu à extraire via navigateur ou archive ; référencée pour le site.)",
-      "url_origine": "http://latribunedelacapitale.com/societe/4707-portrait-a-titre-posthume-richard-adjaho-un-ambassadeur-du-benin-en-france-hors-pair.html"
+      "extrait_citation": "« Il est jusque là, le meilleur ambassadeur du Bénin en France que notre pays ait connu » (Julien Sinzogan, plasticien). […] ce technocrate bon teint a marqué de façon positive son passage diplomatique en France à travers son humilité, son sens de l'écoute, son sens aigu de responsabilité, sa disponibilité permanente et son amour débordant pour ses compatriotes.",
+      "url_origine": "https://web.archive.org/web/20190409144742/http://latribunedelacapitale.com/societe/4707-portrait-a-titre-posthume-richard-adjaho-un-ambassadeur-du-benin-en-france-hors-pair.html"
+    },
+    {
+      "source": "La Nouvelle Tribune",
+      "date_publication": "2010-01-14",
+      "titre_article": "Décédé le 18 décembre 2009 : Richard Adjaho conduit à sa dernière demeure",
+      "auteur": "Fortuné Sossa",
+      "extrait_citation": "Dans la journée du mercredi, une messe corps présent lui a été célébrée en l'Église catholique Saint Michel de Cotonou. Ce culte religieux a été présidé par l'archevêque de Cotonou, Monseigneur Marcel Agboton assisté du Nonce apostolique. […] Il laisse derrière lui, une veuve et quatre enfants.",
+      "url_origine": "https://web.archive.org/web/20100117013516/http://www.lanouvelletribune.info/201001144995/une/decede-le-18-decembre-2009-richard-adjaho-conduit-a-sa-derniere-demeure.html"
     }
   ],
   "notes_methodologiques": [
@@ -318,6 +396,9 @@
     "Sources non extraites automatiquement (JS) : La Nation, Tribune de la Capitale, Hub Rural — à récupérer via navigateur ou Wayback Machine.",
     "Le corpus des décrets 1991-1993 reste à inventorier sur sgg.gouv.bj (crawl du pattern /doc/decret-{annee}-{num}/download).",
     "Fiche Google Books RFQWAQAAIAAJ mal titrée ('Kalétas, la mascarade') mais ISBN 9782909130781 = Bonne gouvernance au Bénin.",
-    "Collecte réalisée le 2026-07-07 ; citations retranscrites verbatim depuis les pages sources."
+    "Collecte réalisée le 2026-07-07 ; citations retranscrites verbatim depuis les pages sources.",
+    "Récolte navigateur/Wayback du 2026-07-08 : photo officielle BBC 2006 récupérée (l'original de la photo aCotonou) ; textes intégraux Tribune de la Capitale (2019) et obsèques Nouvelle Tribune (14-01-2010) sauvés dans docs/archives/.",
+    "Sites morts constatés le 2026-07-08 : lanationbenin.info (NXDOMAIN, article 2019 perdu), latribunedelacapitale.com (NXDOMAIN), hubrural.org (domaine à vendre, interview non archivée).",
+    "Découverte connexe : article 24haubenin.info (2017) sur Agnès Adjaho, ambassadrice au Vatican (épouse)."
   ]
 }
