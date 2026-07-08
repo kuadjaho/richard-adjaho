@@ -401,7 +401,9 @@ window.HERITAGE = {
   "Collecte réalisée le 2026-07-07 ; citations retranscrites verbatim depuis les pages sources.",
   "Récolte navigateur/Wayback du 2026-07-08 : photo officielle BBC 2006 récupérée (l'original de la photo aCotonou) ; textes intégraux Tribune de la Capitale (2019) et obsèques Nouvelle Tribune (14-01-2010) sauvés dans docs/archives/.",
   "Sites morts constatés le 2026-07-08 : lanationbenin.info (NXDOMAIN, article 2019 perdu), latribunedelacapitale.com (NXDOMAIN), hubrural.org (domaine à vendre, interview non archivée).",
-  "Découverte connexe : article 24haubenin.info (2017) sur Agnès Adjaho, ambassadrice au Vatican (épouse)."
+  "Découverte connexe : article 24haubenin.info (2017) sur Agnès Adjaho, ambassadrice au Vatican (épouse).",
+  "Sources primaires des contenus 2010 et 2019 : l'article des obsèques (F. Sossa, La Nouvelle Tribune, 14-01-2010) et le portrait de la Tribune de la Capitale (B. Assouma, 28-02-2019, citation de J. Sinzogan) sont archivés en texte intégral dans docs/archives/, avec leurs URL Wayback Machine dans archives_hommages.",
+  "Identification des portraits (rangs 1, 2 et 7 du catalogue photos, dont la photo BBC du candidat de 2006) : provenance documentée, mais une validation par la famille reste recommandée, la presse de l'époque mélangeant parfois les clichés."
  ]
 };
 window.PHOTOS = {
@@ -425,7 +427,8 @@ window.PHOTOS = {
    "statut": "confirmee",
    "sha256": "1b0bd05c84434136be574ea06db5935f29c97d609cdfeae65e2285b4197f314b",
    "fichier_local": "assets/images/01_1b0bd05c8443.jpg",
-   "octets": 73653
+   "octets": 73653,
+   "validation_familiale": "recommandée"
   },
   {
    "rang": 2,
@@ -436,7 +439,8 @@ window.PHOTOS = {
    "statut": "confirmee",
    "sha256": "aae13d19f025c3f9dd3ff2f1fe8eab3d8fb1d79d00ed4cf304f6f2acbd700158",
    "fichier_local": "assets/images/02_aae13d19f025.gif",
-   "octets": 335201
+   "octets": 335201,
+   "validation_familiale": "recommandée"
   },
   {
    "rang": 3,
@@ -490,7 +494,8 @@ window.PHOTOS = {
    "sha256": "a27b74dc48bff4a7aa0cb3974cd179720f07dd1806b1edd6378abc6ceac4f109",
    "fichier_local": "assets/images/07_a27b74dc48bf.gif",
    "octets": 64158,
-   "note_harvest": "Photo officielle BBC Afrique (alt=\"Richard Adjaho\", 300 px) récupérée le 2026-07-08 via Wayback Machine. Même scène que la photo aCotonou (rang 2) mais SANS filigrane — c'est l'original. Bio BBC associée : « Précédemment 2ème adjoint au maire de Cotonou. Ancien ministre de la sécurité sous le président Soglo… »"
+   "note_harvest": "Photo officielle BBC Afrique (alt=\"Richard Adjaho\", 300 px) récupérée le 2026-07-08 via Wayback Machine. Même scène que la photo aCotonou (rang 2) mais SANS filigrane — c'est l'original. Bio BBC associée : « Précédemment 2ème adjoint au maire de Cotonou. Ancien ministre de la sécurité sous le président Soglo… »",
+   "validation_familiale": "recommandée"
   },
   {
    "rang": 8,

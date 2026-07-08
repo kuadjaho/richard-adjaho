@@ -50,19 +50,23 @@ img { max-width: 100%; }
   font-weight: 700;
 }
 
-/* ---------- Révélation au défilement ---------- */
-.reveal {
+/* ---------- Révélation au défilement ----------
+   État initial masqué UNIQUEMENT si JS est actif (html.js posé par un script
+   inline dans <head>) : sans JS, ou si un script échoue, tout reste lisible. */
+html.js .reveal {
   opacity: 0;
   transform: translateY(14px);
-  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
-              transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal {
+  transition: opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
   transition-delay: var(--reveal-delay, 0ms);
 }
-.reveal.est-visible { opacity: 1; transform: none; }
+html.js .reveal.est-visible { opacity: 1; transform: none; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .reveal { opacity: 1; transform: none; transition: none; }
+  html.js .reveal, .reveal { opacity: 1; transform: none; transition: none; }
   .barre-lecture { transition: none; }
 }
 

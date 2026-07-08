@@ -97,23 +97,52 @@
   // ---------- Révélation au défilement ----------
   function observerReveals() {
     const reduits = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const cibles = document.querySelectorAll(".reveal");
+    const cibles = [...document.querySelectorAll(".reveal")];
+    const reveler = (el) => el.classList.add("est-visible");
+
     if (reduits || !("IntersectionObserver" in window)) {
-      cibles.forEach((el) => el.classList.add("est-visible"));
+      cibles.forEach(reveler);
       return;
     }
+
+    // 1. Tout ce qui est déjà dans le viewport apparaît immédiatement,
+    //    sans délai en cascade (pas d'écran vide au chargement).
+    for (const el of cibles) {
+      const r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight && r.bottom > 0) {
+        el.style.setProperty("--reveal-delay", "0ms");
+        reveler(el);
+      }
+    }
+
     const obs = new IntersectionObserver(
       (entrees) => {
         for (const e of entrees) {
           if (e.isIntersecting) {
-            e.target.classList.add("est-visible");
+            reveler(e.target);
             obs.unobserve(e.target);
           }
         }
       },
-      { rootMargin: "0px 0px -8% 0px", threshold: 0.08 }
+      { rootMargin: "0px 0px -10% 0px", threshold: 0.05 }
     );
-    cibles.forEach((el) => obs.observe(el));
+    cibles.forEach((el) => { if (!el.classList.contains("est-visible")) obs.observe(el); });
+
+    // 2. Saut d'ancre : la section visée se révèle instantanément,
+    //    sans attendre la fin du défilement doux.
+    const revelerCible = (hash) => {
+      if (!hash || hash === "#") return;
+      const section = document.querySelector(hash);
+      if (!section) return;
+      section.querySelectorAll(".reveal").forEach((el) => {
+        el.style.setProperty("--reveal-delay", "0ms");
+        reveler(el);
+      });
+    };
+    document.querySelectorAll('a[href^="#"]').forEach((a) =>
+      a.addEventListener("click", () => revelerCible(a.getAttribute("href"))));
+    window.addEventListener("hashchange", () => revelerCible(location.hash));
+    if (location.hash) revelerCible(location.hash);
   }
 
   // ---------- Barre de progression de lecture ----------

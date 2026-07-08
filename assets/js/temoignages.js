@@ -121,7 +121,9 @@
              le journal a quitté le web et aucune archive n'a été retrouvée.
              Il est référencé ici pour que la trace ne s'efface pas deux fois.</p>`
           : `<blockquote class="mt-4 font-serif italic text-[0.95rem] leading-relaxed text-gray-700">
-             «&nbsp;${esc(a.extrait_citation)}&nbsp;»</blockquote>`}
+             ${a.extrait_citation.trimStart().startsWith("«")
+               ? esc(a.extrait_citation)
+               : `«&nbsp;${esc(a.extrait_citation)}&nbsp;»`}</blockquote>`}
         ${a.url_origine && !perdu
           ? `<a href="${esc(a.url_origine)}" target="_blank" rel="noopener"
                class="mt-4 inline-block text-xs text-[--foret] underline decoration-dotted underline-offset-2">source ↗</a>`

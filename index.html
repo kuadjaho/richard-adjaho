@@ -6,9 +6,44 @@
 <title>Richard Kokou Adjaho (1949–2009) — Un grand commis de l'État</title>
 <meta name="description" content="Mémorial dédié à Richard Kokou Adjaho : ministre de l'Intérieur du Bénin (1991-1993), ambassadeur en France, père de la décentralisation béninoise, écrivain. Chronologie, hommages, bibliographie et archives.">
 
+<!-- Partage social (og:url et og:image à passer en URL absolue au déploiement) -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Richard Kokou Adjaho (1949–2009) — Un grand commis de l'État">
+<meta property="og:description" content="Mémorial dédié à Richard Kokou Adjaho : ministre de l'Intérieur du Bénin, ambassadeur en France, père de la décentralisation béninoise, écrivain.">
+<meta property="og:image" content="assets/images/01_1b0bd05c8443.jpg">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Richard Kokou Adjaho (1949–2009) — Un grand commis de l'État">
+<meta name="twitter:image" content="assets/images/01_1b0bd05c8443.jpg">
+<!-- <link rel="canonical" href=""> à renseigner au déploiement -->
+
+<!-- Postérité numérique : fiche structurée schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Richard Kokou Adjaho",
+  "birthDate": "1949",
+  "birthPlace": { "@type": "Place", "name": "Djèrègbè, Sèmè-Kpodji, Bénin" },
+  "deathDate": "2009-12-18",
+  "deathPlace": { "@type": "Place", "name": "Cotonou, Bénin" },
+  "jobTitle": ["Ministre de l'Intérieur du Bénin", "Ambassadeur du Bénin en France", "Inspecteur général des Finances"],
+  "nationality": { "@type": "Country", "name": "Bénin" },
+  "image": "assets/images/01_1b0bd05c8443.jpg",
+  "sameAs": [
+    "https://fr.wikipedia.org/wiki/Richard_Adjaho",
+    "https://www.wikidata.org/wiki/Q78039112"
+  ]
+}
+</script>
+
+<!-- Pose html.js AVANT le rendu : l'état masqué des .reveal n'existe qu'avec JS actif -->
+<script>document.documentElement.classList.add("js");</script>
+
 <!-- Typographies d'apparat -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.tailwindcss.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
 <!-- Tailwind CDN + palette du mémorial -->
@@ -26,11 +61,12 @@ tailwind.config = {
   },
 };
 </script>
-<link rel="stylesheet" href="assets/css/memorial.css">
+<link rel="stylesheet" href="assets/css/memorial.css?v=2">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🕊️</text></svg>">
 </head>
 
 <body class="bg-ivoire text-encre font-sans antialiased">
+<a href="#contenu" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[70] focus:rounded-lg focus:bg-foret focus:px-4 focus:py-2 focus:text-white focus:text-sm">Aller au contenu</a>
 <div class="barre-lecture" role="presentation"></div>
 
 <!-- ===================== NAVIGATION ===================== -->
@@ -49,12 +85,14 @@ tailwind.config = {
 </nav>
 
 <!-- ===================== I. OUVERTURE ===================== -->
+<main id="contenu">
 <header id="haut" class="relative overflow-hidden">
   <div class="mx-auto grid max-w-6xl gap-10 px-5 py-16 md:py-24 lg:grid-cols-[1.15fr_1fr] lg:items-center">
     <div>
       <p class="reveal text-xs font-semibold uppercase tracking-[0.35em] text-[--or]">Mémorial · République du Bénin</p>
-      <h1 class="reveal mt-4 font-serif text-5xl font-black leading-[1.02] md:text-7xl" style="--reveal-delay: 90ms">
-        Richard<br>Kokou<br>Adjaho</h1>
+      <h1 class="reveal mt-4 font-serif text-5xl font-black leading-[1.02] md:text-7xl" style="--reveal-delay: 90ms"
+          aria-label="Richard Kokou Adjaho">
+        <span aria-hidden="true">Richard<br>Kokou<br>Adjaho</span></h1>
       <p class="reveal mt-5 font-serif text-lg italic text-[--encre-2]" style="--reveal-delay: 180ms">
         Djèrègbè, 1949 – Cotonou, 18 décembre 2009</p>
       <p class="reveal mt-6 max-w-md text-[0.95rem] leading-relaxed text-gray-600" style="--reveal-delay: 260ms">
@@ -187,6 +225,8 @@ tailwind.config = {
   </div>
 </section>
 
+</main>
+
 <!-- ===================== PIED ===================== -->
 <footer class="border-t border-gray-800 bg-encre pb-10 pt-8 text-center text-xs text-gray-500">
   <p class="font-serif italic text-base text-gray-400">« Il est resté un gentleman de la politique au sens britannique du terme. »</p>
@@ -197,7 +237,7 @@ tailwind.config = {
 <!-- ===================== LIGHTBOX ===================== -->
 <dialog id="lightbox" class="lightbox rounded-xl" aria-label="Photographie agrandie">
   <div class="p-4 md:p-6">
-    <img src="" alt="">
+    <img alt="Photographie agrandie">
     <div class="mt-4 flex items-start justify-between gap-4">
       <div>
         <p class="lb-desc text-sm text-gray-200"></p>
@@ -210,10 +250,10 @@ tailwind.config = {
 </dialog>
 
 <!-- Données (générées par scripts/build_data.py) puis modules -->
-<script src="assets/js/data.js"></script>
-<script src="assets/js/timeline.js"></script>
-<script src="assets/js/gallery.js"></script>
-<script src="assets/js/temoignages.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="assets/js/data.js?v=2"></script>
+<script src="assets/js/timeline.js?v=2"></script>
+<script src="assets/js/gallery.js?v=2"></script>
+<script src="assets/js/temoignages.js?v=2"></script>
+<script src="assets/js/main.js?v=2"></script>
 </body>
 </html>
