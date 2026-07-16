@@ -12,3 +12,6 @@ scraper/photos/
 
 # OS
 .DS_Store
+
+# Outillage local
+.claude/
