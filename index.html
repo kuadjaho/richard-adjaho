@@ -44,25 +44,11 @@
 <!-- Typographies d'apparat -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://cdn.tailwindcss.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-<!-- Tailwind CDN + palette du mémorial -->
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: { ivoire: "#faf8f4", sable: "#efe9df", encre: "#1a1d23", foret: "#14532d", or: "#b8860b" },
-      fontFamily: {
-        serif: ['"Playfair Display"', "Georgia", "serif"],
-        sans: ["Inter", "system-ui", "sans-serif"],
-      },
-    },
-  },
-};
-</script>
-<link rel="stylesheet" href="assets/css/memorial.css?v=2">
+<!-- Tailwind compilé localement (seules les classes réellement utilisées) puis palette du mémorial -->
+<link rel="stylesheet" href="assets/css/tailwind.css?v=3">
+<link rel="stylesheet" href="assets/css/memorial.css?v=3">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🕊️</text></svg>">
 </head>
 
@@ -110,9 +96,12 @@ tailwind.config = {
       </ul>
     </div>
     <figure class="reveal relative" style="--reveal-delay: 200ms">
-      <img src="assets/images/01_1b0bd05c8443.jpg"
-           alt="Portrait de Richard Kokou Adjaho, ancien ministre de l'Intérieur du Bénin, en costume"
-           class="w-full rounded-2xl border border-[--filet] object-cover shadow-lg" fetchpriority="high">
+      <picture>
+        <source srcset="assets/images/01_1b0bd05c8443.webp" type="image/webp">
+        <img src="assets/images/01_1b0bd05c8443.jpg"
+             alt="Portrait de Richard Kokou Adjaho, ancien ministre de l'Intérieur du Bénin, en costume"
+             class="w-full rounded-2xl border border-[--filet] object-cover shadow-lg" fetchpriority="high">
+      </picture>
       <figcaption class="mt-2 text-right text-[0.68rem] text-gray-400">Photo La Nouvelle Tribune, authentifiée</figcaption>
       <div class="absolute -left-3 -top-3 h-16 w-16 rounded-tl-2xl border-l-2 border-t-2 border-[--or]" aria-hidden="true"></div>
     </figure>
@@ -251,10 +240,10 @@ tailwind.config = {
 </dialog>
 
 <!-- Données (générées par scripts/build_data.py) puis modules -->
-<script src="assets/js/data.js?v=2"></script>
-<script src="assets/js/timeline.js?v=2"></script>
-<script src="assets/js/gallery.js?v=2"></script>
-<script src="assets/js/temoignages.js?v=2"></script>
-<script src="assets/js/main.js?v=2"></script>
+<script src="assets/js/data.js?v=3"></script>
+<script src="assets/js/timeline.js?v=3"></script>
+<script src="assets/js/gallery.js?v=3"></script>
+<script src="assets/js/temoignages.js?v=3"></script>
+<script src="assets/js/main.js?v=3"></script>
 </body>
 </html>

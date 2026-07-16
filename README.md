@@ -37,11 +37,33 @@ python3 -m http.server 8000
 # puis http://localhost:8000
 ```
 
-Après toute modification de `data/*.json`, régénérer les données embarquées :
+## Régénérer les assets
+
+Le site n'utilise **aucun framework à l'exécution** : Tailwind est compilé en local
+(~20 Ko de CSS, contre ~300 Ko de JS au CDN) et les images sont servies en WebP
+(dérivés légers ; les originaux et leurs empreintes SHA-256 restent la référence
+d'authenticité). Tout se régénère en une commande :
 
 ```bash
-python3 scripts/build_data.py   # valide (Pydantic) puis réécrit assets/js/data.js
+./scripts/build.sh   # données (Pydantic) + WebP + Tailwind compilé
 ```
+
+Ou étape par étape :
+
+```bash
+python3 scripts/build_data.py   # valide le corpus puis réécrit assets/js/data.js
+# WebP : voir scripts/build.sh (Pillow)
+npx tailwindcss@3 -c tailwind.config.js -i assets/css/tailwind-input.css -o assets/css/tailwind.css --minify
+```
+
+> Après un changement de CSS ou de JS, incrémenter le `?v=` des balises `<link>` /
+> `<script>` dans `index.html` pour forcer le rafraîchissement du cache.
+
+## Mise en ligne
+
+Le site est publié via **GitHub Pages** depuis la branche `main` (dossier racine).
+Un `git push` suffit à redéployer (~30 s). Fichier `.nojekyll` présent pour servir
+les assets tels quels.
 
 ## Relancer la collecte
 

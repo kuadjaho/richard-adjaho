@@ -7,6 +7,16 @@
   const esc = (s) =>
     String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
+  // Dérivé WebP (léger) servi en priorité ; l'original reste le repli et
+  // conserve son empreinte SHA-256 d'authenticité.
+  const webp = (p) => p.replace(/\.(jpe?g|gif|png)$/i, ".webp");
+  window.pictureHTML = function (chemin, alt, classeImg, attrs) {
+    return `<picture>
+      <source srcset="${esc(webp(chemin))}" type="image/webp">
+      <img src="${esc(chemin)}" alt="${esc(alt)}" ${attrs || ""} class="${classeImg}">
+    </picture>`;
+  };
+
   // Explications en langue claire pour les images perdues (le détail technique
   // reste dans data/photos_catalog.json, champ note_harvest).
   const RAISONS = {
@@ -32,8 +42,7 @@
             tabindex="0" role="button" aria-label="Agrandir : ${esc(p.description_alt)}"
             data-rang="${p.rang}">
       <div class="overflow-hidden">
-        <img src="${esc(p.fichier_local.replace(/^assets\//, "assets/"))}" alt="${esc(p.description_alt)}"
-             loading="lazy" class="w-full h-56 object-cover object-top">
+        ${window.pictureHTML(p.fichier_local, p.description_alt, "w-full h-56 object-cover object-top", 'loading="lazy"')}
       </div>
       <figcaption class="p-4">
         <p class="text-sm leading-snug">${esc(p.description_alt)}</p>
@@ -74,7 +83,7 @@
   // ---------- Lightbox ----------
   function ouvrirLightbox(p) {
     const dlg = document.getElementById("lightbox");
-    dlg.querySelector("img").src = p.fichier_local;
+    dlg.querySelector("img").src = webp(p.fichier_local);
     dlg.querySelector("img").alt = p.description_alt;
     dlg.querySelector(".lb-desc").textContent = p.description_alt;
     dlg.querySelector(".lb-credit").textContent = p.credit;

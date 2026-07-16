@@ -44,7 +44,7 @@
       .map((o, i) => {
         const src = couvs[o.titre];
         const couverture = src
-          ? `<img src="${esc(src)}" alt="Couverture de ${esc(o.titre)}" loading="lazy" class="couv-reelle w-full">`
+          ? window.pictureHTML(src, "Couverture de " + o.titre, "couv-reelle w-full", 'loading="lazy"')
           : `<div class="couv-typo" role="img" aria-label="Couverture typographique reconstituée : ${esc(o.titre)}">
                <p class="text-[0.6rem] uppercase tracking-widest text-[--encre-2]">Richard Adjaho</p>
                <p class="couv-titre">${esc(o.titre.split(":")[0])}</p>
