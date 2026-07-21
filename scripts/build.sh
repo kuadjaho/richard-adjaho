@@ -26,7 +26,10 @@ for src in sorted(Path("assets/images").glob("*")):
     print(f"   {src.name} -> {src.stem}.webp")
 PY
 
-echo "3/3 · CSS : Tailwind compilé et minifié (classes réellement utilisées) -> assets/css/tailwind.css"
+echo "3/4 · Polices : téléchargement, sous-ensemble et fonts.css"
+python3 scripts/build_fonts.py
+
+echo "4/4 · CSS : Tailwind compilé et minifié (classes réellement utilisées) -> assets/css/tailwind.css"
 npx -y tailwindcss@3 -c tailwind.config.js -i assets/css/tailwind-input.css -o assets/css/tailwind.css --minify
 
 echo "Terminé. Pense à incrémenter le ?v= des assets dans index.html si CSS/JS ont changé."
